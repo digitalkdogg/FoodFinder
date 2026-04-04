@@ -1,0 +1,1083 @@
+2026-04-04 13:57:05,160 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 13:57:05,171 - main - INFO - Connected to database
+2026-04-04 13:57:05,171 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 13:57:05,171 - main - INFO - Index strategy: index_page
+2026-04-04 13:57:12,552 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 2, skipped: 0, errors: 0
+2026-04-04 13:57:12,552 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-04 13:57:12,552 - main - INFO - Index strategy: index_page
+2026-04-04 13:57:17,951 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-04 13:57:20,511 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-04 13:57:20,511 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 0, errors: 2
+2026-04-04 13:57:20,511 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-04 13:57:20,511 - main - INFO - Index strategy: paginated_blog
+2026-04-04 13:57:36,620 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 2, skipped: 0, errors: 0
+2026-04-04 13:57:36,620 - main - INFO - === Feathers and Fins ===
+2026-04-04 13:57:36,621 - main - INFO - Index strategy: category_pages
+2026-04-04 13:57:39,559 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-04 13:57:39,559 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-04 13:57:39,559 - main - INFO - === Sage Alpha Gal ===
+2026-04-04 13:57:39,559 - main - INFO - Index strategy: category_pages
+2026-04-04 13:58:15,198 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 2, skipped: 0, errors: 0
+2026-04-04 13:58:15,198 - main - INFO - === The Alpha Gal Diet ===
+2026-04-04 13:58:15,198 - main - INFO - Index strategy: category_pages
+2026-04-04 14:01:43,712 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:01:43,721 - main - INFO - Connected to database
+2026-04-04 14:01:43,721 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:01:43,721 - main - INFO - Index strategy: index_page
+2026-04-04 14:01:48,456 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2014/09/04/sesame-chicken-kabobs/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:01:50,784 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2017/06/08/fresh-tomato-and-basil-sauce/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:01:52,917 - alphagalcooking - INFO - INSERTED: Veggie Burritos
+2026-04-04 14:01:55,195 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2013/05/23/black-beans-and-yellow-rice/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:01:57,473 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2014/10/22/apple-and-pecan-acorn-squash/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:01:59,838 - alphagalcooking - INFO - INSERTED: Turkey And Bean Chili
+2026-04-04 14:02:02,106 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2013/10/05/pesto-pasta/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:04,414 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2014/08/14/vegetarian-egg-rolls/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:06,674 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2014/03/13/easy-beans-and-rice-with-cilantro/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:08,981 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2013/11/01/vegetarian-chili/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:11,258 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2017/07/02/baked-beans-quintet/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:13,534 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2015/05/20/cranberry-apple-sweet-potatoes/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:15,806 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2013/05/31/spaghetti-and-meatballs/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:02:18,120 - alphagalcooking - ERROR - Error on https://alphagalcooking.wordpress.com/2013/05/10/vegetable-cheese-quiche/: (1048, "Column 'ingredient_id' cannot be null")
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 119, in run
+    db.insert_recipe_ingredient(
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 84, in insert_recipe_ingredient
+    cursor.execute(
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'ingredient_id' cannot be null")
+2026-04-04 14:33:50,106 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:33:50,114 - main - INFO - Connected to database
+2026-04-04 14:33:50,114 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:33:50,114 - main - INFO - Index strategy: index_page
+2026-04-04 14:33:59,125 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 3, skipped: 0, errors: 0
+2026-04-04 14:33:59,125 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:33:59,125 - main - INFO - Found: 54, Inserted: 3, Skipped: 0, Errors: 0
+2026-04-04 14:33:59,125 - main - INFO - Dry-run complete. No database changes made.
+2026-04-04 14:34:24,369 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:34:24,379 - main - INFO - Connected to database
+2026-04-04 14:34:24,380 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:34:24,380 - main - INFO - Index strategy: index_page
+2026-04-04 14:34:28,966 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 1, skipped: 0, errors: 0
+2026-04-04 14:34:28,966 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:34:28,966 - main - INFO - Found: 54, Inserted: 1, Skipped: 0, Errors: 0
+2026-04-04 14:34:28,966 - main - INFO - Dry-run complete. No database changes made.
+2026-04-04 14:35:17,341 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:35:17,351 - main - INFO - Connected to database
+2026-04-04 14:35:17,351 - main - INFO - === The Alpha Gal Diet ===
+2026-04-04 14:35:17,351 - main - INFO - Index strategy: category_pages
+2026-04-04 14:36:11,056 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:36:11,065 - main - INFO - Connected to database
+2026-04-04 14:36:11,065 - main - INFO - === The Alpha Gal Diet ===
+2026-04-04 14:36:11,065 - main - INFO - Index strategy: category_pages
+2026-04-04 14:37:01,151 - main - ERROR - Error scraping The Alpha Gal Diet: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/main.py", line 113, in main
+    summary = driver.run(dry_run=args.dry_run, limit=args.limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 65, in run
+    source_id = db.get_or_create_source(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 50, in get_or_create_source
+    cursor.execute("INSERT IGNORE INTO sources (site_name, base_url) VALUES (%s, %s)", (site_name, base_url))
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+2026-04-04 14:37:01,154 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:37:01,154 - main - INFO - Found: 0, Inserted: 0, Skipped: 0, Errors: 1
+2026-04-04 14:37:01,154 - main - INFO - Dry-run complete. No database changes made.
+2026-04-04 14:37:35,234 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:37:35,241 - main - INFO - Connected to database
+2026-04-04 14:37:35,241 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:37:35,242 - main - INFO - Index strategy: index_page
+2026-04-04 14:37:39,892 - alphagalcooking - INFO - INSERTED: Turkey And Bean Chili
+2026-04-04 14:37:42,190 - alphagalcooking - INFO - INSERTED: Baby Blue Salad
+2026-04-04 14:37:44,328 - alphagalcooking - INFO - INSERTED: Easy Beans And Rice With Cilantro
+2026-04-04 14:37:46,630 - alphagalcooking - INFO - INSERTED: Vegetable And Tofu Pad Thai
+2026-04-04 14:37:48,914 - alphagalcooking - INFO - INSERTED: Vegetarian Eggs Benedict
+2026-04-04 14:37:48,914 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 5, skipped: 0, errors: 0
+2026-04-04 14:37:48,914 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:37:48,914 - main - INFO - Found: 54, Inserted: 5, Skipped: 0, Errors: 0
+2026-04-04 14:37:56,139 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:37:56,146 - main - INFO - Connected to database
+2026-04-04 14:37:56,146 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:37:56,147 - main - INFO - Index strategy: index_page
+2026-04-04 14:38:00,891 - alphagalcooking - INFO - INSERTED: Soy-Lime Grilled Chicken Thighs
+2026-04-04 14:38:03,201 - alphagalcooking - INFO - INSERTED: Roasted Winter Veggies
+2026-04-04 14:38:05,527 - alphagalcooking - INFO - INSERTED: Spinach, Green Onion, And Smoked Gouda Quiche
+2026-04-04 14:38:07,808 - alphagalcooking - INFO - INSERTED: Broccoli-Fettuccine Alfredo
+2026-04-04 14:38:09,963 - alphagalcooking - INFO - INSERTED: Fresh Tomato And Basil Sauce
+2026-04-04 14:38:09,964 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 5, skipped: 0, errors: 0
+2026-04-04 14:38:09,964 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:38:09,964 - main - INFO - Found: 54, Inserted: 5, Skipped: 0, Errors: 0
+2026-04-04 14:38:17,109 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:38:17,118 - main - INFO - Connected to database
+2026-04-04 14:38:17,118 - main - INFO - === The Alpha Gal Diet ===
+2026-04-04 14:38:17,118 - main - INFO - Index strategy: category_pages
+2026-04-04 14:39:07,207 - main - ERROR - Error scraping The Alpha Gal Diet: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+Traceback (most recent call last):
+  File "/var/www/html/FoodFinder/agent/scraper/main.py", line 113, in main
+    summary = driver.run(dry_run=args.dry_run, limit=args.limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/scraper/base_driver.py", line 65, in run
+    source_id = db.get_or_create_source(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/scraper/db.py", line 50, in get_or_create_source
+    cursor.execute("INSERT IGNORE INTO sources (site_name, base_url) VALUES (%s, %s)", (site_name, base_url))
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 822, in _read_query_result
+    result.read()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 1200, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/connections.py", line 772, in _read_packet
+    packet.raise_for_error()
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/var/www/html/FoodFinder/agent/venv/lib/python3.12/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+2026-04-04 14:39:07,210 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:39:07,210 - main - INFO - Found: 0, Inserted: 0, Skipped: 0, Errors: 1
+2026-04-04 14:39:07,210 - main - INFO - Dry-run complete. No database changes made.
+2026-04-04 14:39:33,011 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:39:33,020 - main - INFO - Connected to database
+2026-04-04 14:39:33,020 - main - INFO - === The Alpha Gal Diet ===
+2026-04-04 14:39:33,020 - main - INFO - Index strategy: category_pages
+2026-04-04 14:42:05,245 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:42:05,252 - main - INFO - Connected to database
+2026-04-04 14:42:05,252 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-04 14:42:05,252 - main - INFO - Index strategy: paginated_blog
+2026-04-04 14:42:21,251 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 2, skipped: 0, errors: 0
+2026-04-04 14:42:21,251 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:42:21,251 - main - INFO - Found: 38, Inserted: 2, Skipped: 0, Errors: 0
+2026-04-04 14:42:21,251 - main - INFO - Dry-run complete. No database changes made.
+2026-04-04 14:43:08,102 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:43:08,110 - main - INFO - Connected to database
+2026-04-04 14:43:08,110 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:43:08,111 - main - INFO - Index strategy: index_page
+2026-04-04 14:43:12,892 - alphagalcooking - INFO - INSERTED: Summer Veggie Penne
+2026-04-04 14:43:15,171 - alphagalcooking - INFO - INSERTED: Bowties, Chicken, & Olives
+2026-04-04 14:43:17,538 - alphagalcooking - INFO - INSERTED: Our Favorite Apple Pie
+2026-04-04 14:43:19,653 - alphagalcooking - INFO - INSERTED: Cranberry-Apple Sweet Potatoes
+2026-04-04 14:43:21,922 - alphagalcooking - INFO - INSERTED: Raspberry Angel Pie
+2026-04-04 14:43:24,023 - alphagalcooking - INFO - INSERTED: Spaghetti And Meatballs
+2026-04-04 14:43:26,298 - alphagalcooking - INFO - INSERTED: Out-Of-This-World Waffles
+2026-04-04 14:43:28,641 - alphagalcooking - INFO - INSERTED: Turkey And Bean Chili
+2026-04-04 14:43:30,910 - alphagalcooking - INFO - INSERTED: Roasted Winter Veggie Soup
+2026-04-04 14:43:33,215 - alphagalcooking - INFO - INSERTED: Sloppy Joes
+2026-04-04 14:43:35,319 - alphagalcooking - INFO - INSERTED: Egg Cups
+2026-04-04 14:43:37,595 - alphagalcooking - INFO - INSERTED: Chocolate Bread Pudding
+2026-04-04 14:43:39,879 - alphagalcooking - INFO - INSERTED: Apple-Walnut Ravioli
+2026-04-04 14:43:42,158 - alphagalcooking - INFO - INSERTED: Mandarin Spinach Salad
+2026-04-04 14:43:44,459 - alphagalcooking - INFO - INSERTED: Eggplant Stacks
+2026-04-04 14:43:44,459 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/28/spinach-green-onion-and-smoked-gouda-quiche/
+2026-04-04 14:43:46,566 - alphagalcooking - INFO - INSERTED: Baked Beans Quintet
+2026-04-04 14:43:48,774 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-04 14:43:51,049 - alphagalcooking - INFO - INSERTED: Parsley Potatoes
+2026-04-04 14:43:53,311 - alphagalcooking - INFO - INSERTED: Perry’S Potato Soup
+2026-04-04 14:43:53,311 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 18, skipped: 1, errors: 1
+2026-04-04 14:43:53,312 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-04 14:43:53,312 - main - INFO - Index strategy: index_page
+2026-04-04 14:43:58,317 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-04 14:44:00,855 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-04 14:44:03,339 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-04 14:44:06,121 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-04 14:44:08,521 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-04 14:44:10,580 - alphagalallergy - INFO - INSERTED: Alpha Gal Allergy Recipes
+2026-04-04 14:44:13,251 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-04 14:44:15,252 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-04 14:44:15,252 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 1, skipped: 0, errors: 7
+2026-04-04 14:44:15,252 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-04 14:44:15,252 - main - INFO - Index strategy: paginated_blog
+2026-04-04 14:44:27,978 - alphagaldiet_blogspot - INFO - INSERTED: Day 10 - Pizza?  Really?
+2026-04-04 14:44:31,190 - alphagaldiet_blogspot - INFO - INSERTED: Day 8 - Asking For Help & Getting Settled In
+2026-04-04 14:44:34,392 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Rob
+2026-04-04 14:44:37,609 - alphagaldiet_blogspot - INFO - INSERTED: Cross Contact - Food Allergies
+2026-04-04 14:44:40,783 - alphagaldiet_blogspot - INFO - INSERTED: Egglettes - Alpha Gal Friendly
+2026-04-04 14:44:43,897 - alphagaldiet_blogspot - INFO - INSERTED: Day 9 - Back To Work, And Seeking Out Resources
+2026-04-04 14:44:47,170 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - French
+2026-04-04 14:44:50,457 - alphagaldiet_blogspot - INFO - INSERTED: Football Season - Time For Some Chili !!!
+2026-04-04 14:44:53,685 - alphagaldiet_blogspot - INFO - INSERTED: Living Dairy Free - Nutrient Replacement
+2026-04-04 14:44:56,890 - alphagaldiet_blogspot - INFO - INSERTED: Shrimp / Chicken / Anduille Gumbo Recipe - Red Meat Free, Dairy Free, Gluten Free
+2026-04-04 14:45:00,088 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Tammy
+2026-04-04 14:45:03,301 - alphagaldiet_blogspot - INFO - INSERTED: Day 6 - Reading Menus And Asking Questions
+2026-04-04 14:45:06,497 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Kathleen
+2026-04-04 14:45:09,743 - alphagaldiet_blogspot - INFO - INSERTED: Day 7 - Compiling Food Lists
+2026-04-04 14:45:12,940 - alphagaldiet_blogspot - INFO - INSERTED: Day 5 - Mixed Grill - Beware!
+2026-04-04 14:45:16,179 - alphagaldiet_blogspot - INFO - INSERTED: Day 11 - Blood Test Results Are In
+2026-04-04 14:45:19,340 - alphagaldiet_blogspot - INFO - INSERTED: How Many People Do You Know ?
+2026-04-04 14:45:23,461 - alphagaldiet_blogspot - INFO - INSERTED: Alpha Gal Friendly - Turkey Meatloaf Recipe
+2026-04-04 14:45:26,699 - alphagaldiet_blogspot - INFO - INSERTED: Australia - Mammalian Meat Allergy (Mma)
+2026-04-04 14:45:29,837 - alphagaldiet_blogspot - INFO - INSERTED: Holiday Sugar Cookie Recipe - Alpha Gal Friendly
+2026-04-04 14:45:29,837 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 20, skipped: 0, errors: 0
+2026-04-04 14:45:29,837 - main - INFO - === Feathers and Fins ===
+2026-04-04 14:45:29,837 - main - INFO - Index strategy: category_pages
+2026-04-04 14:45:32,821 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-04 14:45:32,826 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-04 14:45:32,827 - main - INFO - === Sage Alpha Gal ===
+2026-04-04 14:45:32,827 - main - INFO - Index strategy: category_pages
+2026-04-04 14:46:05,184 - sagealphagal - INFO - INSERTED: Easy Teriyaki Shrimp In Less Than 30 Minutes
+2026-04-04 14:46:08,352 - sagealphagal - INFO - INSERTED: Simple Tips For Grilling Fish Perfectly Every Time
+2026-04-04 14:46:11,562 - sagealphagal - INFO - INSERTED: Stuffed Peaches: A Sweet And Savory Treat (Includes Dairy-Free Option)
+2026-04-04 14:46:14,735 - sagealphagal - INFO - INSERTED: Easy Green Chile Chicken Enchiladas (Stacked Casserole Style)
+2026-04-04 14:46:17,919 - sagealphagal - INFO - INSERTED: Baked Apple Cider Donuts That Taste Like Fall (Includes Dairy-Free Option)
+2026-04-04 14:46:21,084 - sagealphagal - INFO - INSERTED: Easy Slow Cooker Black Beans You’Ll Want Every Week
+2026-04-04 14:46:24,247 - sagealphagal - INFO - INSERTED: Best Cookbooks For Alpha-Gal: Safe And Delicious Eats
+2026-04-04 14:46:27,432 - sagealphagal - INFO - INSERTED: Delicious, Dairy Free Caramel Sauce In Just Two Steps
+2026-04-04 14:46:30,605 - sagealphagal - INFO - INSERTED: Easy Lotion Bar Recipe For Silky Smooth Skin
+2026-04-04 14:46:33,770 - sagealphagal - INFO - INSERTED: 10 Delicious Quinoa Breakfast Recipes To Start Your Day
+2026-04-04 14:46:36,928 - sagealphagal - INFO - INSERTED: Chocolate-Covered Valentine’S Day Marshmallows
+2026-04-04 14:46:40,098 - sagealphagal - INFO - INSERTED: Sundried Tomato And Feta Savory Quick Bread (Includes Dairy-Free Option)
+2026-04-04 14:46:43,256 - sagealphagal - INFO - INSERTED: Irresistible Almond-Kissed Cherry Bread
+2026-04-04 14:46:46,409 - sagealphagal - INFO - INSERTED: 10 Leftover Turkey Soup Recipes That Beat Turkey Sandwiches
+2026-04-04 14:46:49,581 - sagealphagal - INFO - INSERTED: How To Make Chocolate Covered Strawberries
+2026-04-04 14:46:52,773 - sagealphagal - INFO - INSERTED: From Classic To Ceviche, 13 Shrimp Salad Recipes You’Ll Love
+2026-04-04 14:46:55,945 - sagealphagal - INFO - INSERTED: Say Goodbye To Bone Char With Homemade Powdered Sugar
+2026-04-04 14:46:59,100 - sagealphagal - INFO - INSERTED: How To Make Taco Seasoning So Good, You’Ll Never Buy It Again
+2026-04-04 14:47:02,267 - sagealphagal - INFO - INSERTED: Rise And Shine With Easy, Dairy Free Tofu Pancakes
+2026-04-04 14:47:05,432 - sagealphagal - INFO - INSERTED: 22 Vegan Hot Chocolate Recipes (You Won’T Believe Are Dairy Free)
+2026-04-04 14:47:05,432 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 20, skipped: 0, errors: 0
+2026-04-04 14:47:05,432 - main - INFO - === The Alpha Gal Diet ===
+2026-04-04 14:47:05,432 - main - INFO - Index strategy: category_pages
+2026-04-04 14:49:20,432 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:49:20,441 - main - INFO - Connected to database
+2026-04-04 14:49:20,441 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:49:20,441 - main - INFO - Index strategy: index_page
+2026-04-04 14:49:22,710 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/poultry
+2026-04-04 14:49:25,045 - alphagalcooking - INFO - INSERTED: Black Beans And Yellow Rice
+2026-04-04 14:49:27,322 - alphagalcooking - INFO - INSERTED: Chicken Anna
+2026-04-04 14:49:27,323 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/03/03/sloppy-joes/
+2026-04-04 14:49:27,323 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/31/spaghetti-and-meatballs/
+2026-04-04 14:49:27,323 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/24/raspberry-angel-pie/
+2026-04-04 14:49:27,323 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/06/12/soy-lime-grilled-chicken-thighs/
+2026-04-04 14:49:29,442 - alphagalcooking - INFO - INSERTED: Vegetarian Chili
+2026-04-04 14:49:31,732 - alphagalcooking - INFO - INSERTED: Asparagus Soup
+2026-04-04 14:49:31,732 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/11/roasted-winter-veggies/
+2026-04-04 14:49:31,733 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/04/10/apple-walnut-ravioli/
+2026-04-04 14:49:31,733 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/28/chocolate-bread-pudding/
+2026-04-04 14:49:33,935 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-04 14:49:36,035 - alphagalcooking - INFO - INSERTED: Pesto Pasta
+2026-04-04 14:49:36,035 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/07/03/baby-blue-salad/
+2026-04-04 14:49:36,035 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 5, skipped: 9, errors: 1
+2026-04-04 14:49:36,035 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-04 14:49:36,035 - main - INFO - Index strategy: index_page
+2026-04-04 14:49:40,238 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-04 14:49:42,642 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-04 14:49:45,098 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-04 14:49:48,251 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-04 14:49:48,251 - alphagalallergy - INFO - SKIP (exists): https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/#print?share=print
+2026-04-04 14:49:50,876 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-04 14:49:53,386 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-04 14:49:55,954 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-04 14:49:55,954 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 1, errors: 7
+2026-04-04 14:49:55,954 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-04 14:49:55,954 - main - INFO - Index strategy: paginated_blog
+2026-04-04 14:50:08,651 - alphagaldiet_blogspot - INFO - INSERTED: Where In The World Is Alpha Gal?
+2026-04-04 14:50:11,888 - alphagaldiet_blogspot - INFO - INSERTED: Day 4 - The Waiting Game
+2026-04-04 14:50:15,073 - alphagaldiet_blogspot - INFO - INSERTED: Preventing The Next Tick Bite
+2026-04-04 14:50:18,243 - alphagaldiet_blogspot - INFO - INSERTED: Mardi Gras Time!   Shrimp & Grits
+2026-04-04 14:50:21,439 - alphagaldiet_blogspot - INFO - INSERTED: General Guidelines - What Works For Me ... And What To Avoid
+2026-04-04 14:50:21,440 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-8-asking-for-help-getting-settled-in.html
+2026-04-04 14:50:21,440 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-6-reading-menus-and-asking-questions.html
+2026-04-04 14:50:21,440 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/cross-contact-food-allergies.html
+2026-04-04 14:50:24,615 - alphagaldiet_blogspot - INFO - INSERTED: Updated Test Results - December 2016
+2026-04-04 14:50:27,813 - alphagaldiet_blogspot - INFO - INSERTED: Thanksgiving Treat
+2026-04-04 14:50:27,813 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/football-season-time-for-some-chili.html
+2026-04-04 14:50:30,987 - alphagaldiet_blogspot - INFO - INSERTED: Allergy Message In English And Spanish For Restaurants
+2026-04-04 14:50:34,104 - alphagaldiet_blogspot - INFO - INSERTED: French Toast - Alpha Gal Style
+2026-04-04 14:50:37,223 - alphagaldiet_blogspot - INFO - INSERTED: Goofed Up - Cross Contact
+2026-04-04 14:50:37,223 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-9-back-to-work-and-seeking-out.html
+2026-04-04 14:50:37,223 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 10, skipped: 5, errors: 0
+2026-04-04 14:50:37,223 - main - INFO - === Feathers and Fins ===
+2026-04-04 14:50:37,223 - main - INFO - Index strategy: category_pages
+2026-04-04 14:50:40,189 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-04 14:50:40,194 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-04 14:50:40,194 - main - INFO - === Sage Alpha Gal ===
+2026-04-04 14:50:40,194 - main - INFO - Index strategy: category_pages
+2026-04-04 14:51:12,249 - sagealphagal - INFO - INSERTED: Bite For Bite: The Best Beans For Protein
+2026-04-04 14:51:12,249 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sundried-tomato-feta-savory-quick-bread/
+2026-04-04 14:51:15,422 - sagealphagal - INFO - INSERTED: 22 Immersion Blender Recipes That Will Make You Forget Your Bulky Blender
+2026-04-04 14:51:18,616 - sagealphagal - INFO - INSERTED: Lavender Chamomile Cake With Strawberry Glaze
+2026-04-04 14:51:21,918 - sagealphagal - INFO - INSERTED: Montana Mule: A Moscow Mule Variation With Huckleberry Vodka
+2026-04-04 14:51:25,088 - sagealphagal - INFO - INSERTED: Instant Pot Chicken Noodle Soup In 30 Minutes
+2026-04-04 14:51:28,247 - sagealphagal - INFO - INSERTED: 18 Lasagna Side Dishes That’Ll Make You Forget About The Main Dish
+2026-04-04 14:51:31,452 - sagealphagal - INFO - INSERTED: Say Ciao To Boring With This Easy Italian Seasoning Recipe
+2026-04-04 14:51:31,453 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/teriyaki-shrimp-recipe/
+2026-04-04 14:51:35,006 - sagealphagal - INFO - INSERTED: Easy Stuffed Jalapenos: The Perfect Game Day Appetizer (With Dairy-Free Option)
+2026-04-04 14:51:38,193 - sagealphagal - INFO - INSERTED: Vegan Nutella: Your New Favorite Spread
+2026-04-04 14:51:38,193 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cherry-bread-recipe/
+2026-04-04 14:51:41,353 - sagealphagal - INFO - INSERTED: Easy Shrimp And Rice Recipes For An Alpha Gal’S Kitchen
+2026-04-04 14:51:44,555 - sagealphagal - INFO - INSERTED: 13 Vegan Chocolate Chip Cookie Recipes That’Ll Make You Forget About Butter
+2026-04-04 14:51:47,726 - sagealphagal - INFO - INSERTED: How To Cook Frozen Salmon In The Air Fryer Fast
+2026-04-04 14:51:47,726 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 12, skipped: 3, errors: 0
+2026-04-04 14:51:47,726 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-04 14:51:47,726 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:51:47,726 - main - INFO - Found: 206, Inserted: 27, Skipped: 18, Errors: 8
+2026-04-04 14:52:59,409 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 14:52:59,419 - main - INFO - Connected to database
+2026-04-04 14:52:59,419 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 14:52:59,419 - main - INFO - Index strategy: index_page
+2026-04-04 14:53:01,692 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/28/spinach-green-onion-and-smoked-gouda-quiche/
+2026-04-04 14:53:01,692 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/24/raspberry-angel-pie/
+2026-04-04 14:53:01,692 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/06/12/soy-lime-grilled-chicken-thighs/
+2026-04-04 14:53:01,693 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/03/03/sloppy-joes/
+2026-04-04 14:53:01,693 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/16/eggplant-stacks/
+2026-04-04 14:53:01,693 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/28/chocolate-bread-pudding/
+2026-04-04 14:53:04,044 - alphagalcooking - INFO - INSERTED: Veggie Burritos
+2026-04-04 14:53:04,045 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/desserts
+2026-04-04 14:53:06,354 - alphagalcooking - INFO - INSERTED: Kahlua-Glazed Carrots
+2026-04-04 14:53:08,686 - alphagalcooking - INFO - INSERTED: Heath Bar Apple Dip
+2026-04-04 14:53:08,687 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/05/perrys-potato-soup/
+2026-04-04 14:53:08,687 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/11/roasted-winter-veggies/
+2026-04-04 14:53:08,687 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/29/egg-cups/
+2026-04-04 14:53:08,688 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/11/01/vegetarian-chili/
+2026-04-04 14:53:10,820 - alphagalcooking - INFO - INSERTED: Zucchini-Honey Bread
+2026-04-04 14:53:10,821 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/09/15/chicken-anna/
+2026-04-04 14:53:10,821 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/06/08/fresh-tomato-and-basil-sauce/
+2026-04-04 14:53:12,937 - alphagalcooking - INFO - INSERTED: Apple And Pecan Acorn Squash
+2026-04-04 14:53:15,217 - alphagalcooking - INFO - INSERTED: Eggplant Fries
+2026-04-04 14:53:17,506 - alphagalcooking - INFO - INSERTED: Spinach And Cheddar Strata
+2026-04-04 14:53:19,622 - alphagalcooking - INFO - INSERTED: Vegetable-Cheese Quiche
+2026-04-04 14:53:22,010 - alphagalcooking - INFO - INSERTED: Salmon Caesar Salad
+2026-04-04 14:53:22,011 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/04/10/apple-walnut-ravioli/
+2026-04-04 14:53:24,385 - alphagalcooking - INFO - INSERTED: Thanksgiving Sides
+2026-04-04 14:53:24,386 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/09/02/summer-veggie-penne/
+2026-04-04 14:53:24,386 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/13/parsley-potatoes/
+2026-04-04 14:53:26,804 - alphagalcooking - INFO - INSERTED: ‘Tis The Season
+2026-04-04 14:53:26,805 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/09/03/mandarin-spinach-salad/
+2026-04-04 14:53:26,806 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/23/black-beans-and-yellow-rice/
+2026-04-04 14:53:26,806 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/05/pesto-pasta/
+2026-04-04 14:53:29,078 - alphagalcooking - INFO - INSERTED: Spinach Orzo Salad
+2026-04-04 14:53:31,368 - alphagalcooking - INFO - INSERTED: All-American Turkey Meatloaf
+2026-04-04 14:53:31,369 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/07/03/baby-blue-salad/
+2026-04-04 14:53:33,640 - alphagalcooking - INFO - INSERTED: Chilled Strawberry Soup
+2026-04-04 14:53:35,844 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-04 14:53:35,845 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/31/spaghetti-and-meatballs/
+2026-04-04 14:53:35,846 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/20/out-of-this-world-waffles/
+2026-04-04 14:53:37,963 - alphagalcooking - INFO - INSERTED: Vegetarian Egg Rolls
+2026-04-04 14:53:37,963 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/30/bowties-chicken-olives/
+2026-04-04 14:53:40,245 - alphagalcooking - INFO - INSERTED: Creamy Rotini With Yellow Squash And Turkey Bacon
+2026-04-04 14:53:40,245 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/poultry
+2026-04-04 14:53:42,383 - alphagalcooking - INFO - INSERTED: ‘Tis The Season
+2026-04-04 14:53:42,384 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/05/20/cranberry-apple-sweet-potatoes/
+2026-04-04 14:53:44,744 - alphagalcooking - INFO - INSERTED: Strawberry-Almond Oatmeal Bake
+2026-04-04 14:53:44,744 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/11/broccoli-fettuccine-alfredo/
+2026-04-04 14:53:46,866 - alphagalcooking - INFO - INSERTED: Sesame Chicken Kabobs
+2026-04-04 14:53:46,867 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/01/asparagus-soup/
+2026-04-04 14:53:46,867 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/02/baked-beans-quintet/
+2026-04-04 14:53:46,867 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/28/vegetable-and-tofu-pad-thai/
+2026-04-04 14:53:49,162 - alphagalcooking - INFO - INSERTED: Bean And Salsa Tortillas
+2026-04-04 14:53:49,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/05/11/vegetarian-eggs-benedict/
+2026-04-04 14:53:49,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/22/roasted-winter-veggie-soup/
+2026-04-04 14:53:49,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/13/easy-beans-and-rice-with-cilantro/
+2026-04-04 14:53:49,163 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/soups
+2026-04-04 14:53:49,163 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 20, skipped: 33, errors: 1
+2026-04-04 14:53:49,163 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-04 14:53:49,163 - main - INFO - Index strategy: index_page
+2026-04-04 14:53:51,379 - alphagalallergy - INFO - SKIP (exists): https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/#print?share=print
+2026-04-04 14:53:53,380 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-04 14:53:56,000 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-04 14:53:58,479 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-04 14:54:01,027 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-04 14:54:03,656 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-04 14:54:06,063 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-04 14:54:09,059 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-04 14:54:09,059 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 1, errors: 7
+2026-04-04 14:54:09,059 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-04 14:54:09,059 - main - INFO - Index strategy: paginated_blog
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/01/mardi-gras-time-shrimp-grits_13.html
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-rob.html
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-6-reading-menus-and-asking-questions.html
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/allergy-message-in-english-and-spanish.html
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-tammy.html
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/where-in-world-is-alpha-gal.html
+2026-04-04 14:54:18,694 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-10-pizza-really.html
+2026-04-04 14:54:21,899 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Janet
+2026-04-04 14:54:21,900 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/australia-mammalian-meat-allergy-mma.html
+2026-04-04 14:54:21,900 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/updated-test-results-december-2016.html
+2026-04-04 14:54:21,901 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/french-toast-alpha-gal-style.html
+2026-04-04 14:54:21,901 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/general-guidelines-what-works-for-me.html
+2026-04-04 14:54:21,901 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-7-compiling-food-lists.html
+2026-04-04 14:54:21,901 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-5-mixed-grill-beware.html
+2026-04-04 14:54:21,901 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-4-waiting-game.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/holiday-sugar-cookie-recipe-alpha-gal.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-french.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/thanksgiving-treat.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/football-season-time-for-some-chili.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/goofed-up-cross-contact.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-11-blood-test-results-are-in.html
+2026-04-04 14:54:21,902 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-9-back-to-work-and-seeking-out.html
+2026-04-04 14:54:21,903 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/living-dairy-free-nutrient-replacement.html
+2026-04-04 14:54:21,903 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-kathleen.html
+2026-04-04 14:54:21,903 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/egglettes-alpha-gal-friendly.html
+2026-04-04 14:54:25,027 - alphagaldiet_blogspot - INFO - INSERTED: Answers To All My Crazy Questions .....
+2026-04-04 14:54:28,263 - alphagaldiet_blogspot - INFO - INSERTED: Chocolate Cake!
+2026-04-04 14:54:28,264 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/cross-contact-food-allergies.html
+2026-04-04 14:54:31,439 - alphagaldiet_blogspot - INFO - INSERTED: Gluten Free, Alpha Gal Friendly Pizza With Chicken Anduille Sausage
+2026-04-04 14:54:34,661 - alphagaldiet_blogspot - INFO - INSERTED: Salmon Cakes / Salmon Burgers
+2026-04-04 14:54:34,661 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/preventing-next-tick-bite.html
+2026-04-04 14:54:34,662 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-8-asking-for-help-getting-settled-in.html
+2026-04-04 14:54:37,844 - alphagaldiet_blogspot - INFO - INSERTED: Prelude To Alpha Gal - Up To Day 3
+2026-04-04 14:54:40,984 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Violet
+2026-04-04 14:54:40,985 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/how-many-people-do-you-know.html
+2026-04-04 14:54:44,163 - alphagaldiet_blogspot - INFO - INSERTED: News Links - Alpha Gal Allergy
+2026-04-04 14:54:44,163 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/10/alpha-gal-friendly-turkey-meatloaf.html
+2026-04-04 14:54:44,164 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/shrimp-chicken-anduille-gumbo-recipe.html
+2026-04-04 14:54:44,164 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 8, skipped: 30, errors: 0
+2026-04-04 14:54:44,164 - main - INFO - === Feathers and Fins ===
+2026-04-04 14:54:44,164 - main - INFO - Index strategy: category_pages
+2026-04-04 14:54:47,090 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-04 14:54:47,093 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-04 14:54:47,093 - main - INFO - === Sage Alpha Gal ===
+2026-04-04 14:54:47,093 - main - INFO - Index strategy: category_pages
+2026-04-04 14:55:37,012 - sagealphagal - ERROR - fetch failed for https://sagealphagal.com/category/recipes/page/8/: HTTPSConnectionPool(host='sagealphagal.com', port=443): Read timed out. (read timeout=15)
+2026-04-04 14:55:55,177 - sagealphagal - ERROR - fetch failed for https://sagealphagal.com/chocolate-chia-seed-pudding-recipe/: HTTPSConnectionPool(host='sagealphagal.com', port=443): Read timed out. (read timeout=15)
+2026-04-04 14:55:55,178 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-salad-recipes/
+2026-04-04 14:55:55,178 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/dairy-free-caramel-sauce/
+2026-04-04 14:56:13,327 - sagealphagal - ERROR - fetch failed for https://sagealphagal.com/dairy-free-baking-tips/: HTTPSConnectionPool(host='sagealphagal.com', port=443): Read timed out. (read timeout=15)
+2026-04-04 14:56:23,580 - sagealphagal - INFO - INSERTED: 30 Must-Try Quinoa Salad Recipes
+2026-04-04 14:56:23,581 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/goat-cheese-and-basil-stuffed-peaches/
+2026-04-04 14:56:23,581 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/baked-apple-cider-donuts/
+2026-04-04 14:56:26,765 - sagealphagal - INFO - INSERTED: Grilled Chicken Again? These Side Dishes Will Satisfy!
+2026-04-04 14:56:29,971 - sagealphagal - INFO - INSERTED: Mushroom Masterpiece: Spinach Stuffed Portobellos
+2026-04-04 14:56:29,971 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/teriyaki-shrimp-recipe/
+2026-04-04 14:56:33,137 - sagealphagal - INFO - INSERTED: What To Serve With White Chicken Chili: 11 Delicious Ideas
+2026-04-04 14:56:36,290 - sagealphagal - INFO - INSERTED: Make A Smoked Salmon Omelet That Tastes Like A $20 Brunch Dish
+2026-04-04 14:56:39,448 - sagealphagal - INFO - INSERTED: No-Bake Peanut Butter Bars With A Dairy-Free Chocolate Twist
+2026-04-04 14:56:42,601 - sagealphagal - INFO - INSERTED: Easy Lobster Roll Recipe That Tastes Like New England
+2026-04-04 14:56:45,767 - sagealphagal - INFO - INSERTED: 37 Sizzling Cast Iron Skillet Chicken Recipes
+2026-04-04 14:56:48,929 - sagealphagal - INFO - INSERTED: Creamy Peach Lassi With Cardamom And Cinnamon (Includes Dairy-Free Option)
+2026-04-04 14:56:48,929 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-seasoning-recipe/
+2026-04-04 14:56:52,089 - sagealphagal - INFO - INSERTED: Easy White Chicken Chili In A Crock-Pot
+2026-04-04 14:56:55,241 - sagealphagal - INFO - INSERTED: Healthy Peaches And Cream Baked Oatmeal (With Dairy-Free Option)
+2026-04-04 14:56:58,408 - sagealphagal - INFO - INSERTED: 43 Sweet And Savory Pancake Toppings To Try Today
+2026-04-04 14:56:58,409 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-cook-frozen-salmon-in-the-air-fryer/
+2026-04-04 14:57:01,558 - sagealphagal - INFO - INSERTED: Chicken Lettuce Wraps (In Less Than 20 Minutes)
+2026-04-04 14:57:04,704 - sagealphagal - INFO - INSERTED: Homemade Green Chile Enchilada Sauce In 20 Minutes
+2026-04-04 14:57:07,865 - sagealphagal - INFO - INSERTED: How To Make Peanut Butter
+2026-04-04 14:57:11,038 - sagealphagal - INFO - INSERTED: Homemade Peach Ice Cream That’S Totally Dairy Free
+2026-04-04 14:57:11,038 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-taco-seasoning/
+2026-04-04 14:57:14,185 - sagealphagal - INFO - INSERTED: 15-Minute Spinach Salad With Strawberries And Feta (Includes Dairy-Free Option)
+2026-04-04 14:57:17,343 - sagealphagal - INFO - INSERTED: Homemade Chicken Stock That Beats Store-Bought Every Time
+2026-04-04 14:57:20,500 - sagealphagal - INFO - INSERTED: Best Bbq Chicken Sides For Summer Cookouts
+2026-04-04 14:57:23,682 - sagealphagal - INFO - INSERTED: Dine With A “Friend”: Jennifer Aniston Quinoa Salad
+2026-04-04 14:57:26,844 - sagealphagal - INFO - INSERTED: Making Waves: How To Craft An Ocean Water Cocktail
+2026-04-04 14:57:29,999 - sagealphagal - INFO - INSERTED: Vegan Homemade Pumpkin Spice Latte That Tastes Like Fall
+2026-04-04 14:57:33,156 - sagealphagal - INFO - INSERTED: Homemade Dairy-Free Amaretto Cherry Chip Ice Cream
+2026-04-04 14:57:33,157 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-chicken-enchiladas/
+2026-04-04 14:57:36,317 - sagealphagal - INFO - INSERTED: Sleigh The Holidays With Vegan Christmas Cookies
+2026-04-04 14:57:36,317 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grilling-fish/
+2026-04-04 14:57:39,489 - sagealphagal - INFO - INSERTED: Best Italian Meatball Recipe For Alpha Gals
+2026-04-04 14:57:42,641 - sagealphagal - INFO - INSERTED: Easy Mushroom Toast With Jammy Eggs
+2026-04-04 14:57:45,818 - sagealphagal - INFO - INSERTED: Homemade Guacamole With A Surprising Secret Ingredient
+2026-04-04 14:57:45,819 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/slow-cooker-black-beans/
+2026-04-04 14:57:45,819 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-cookbooks/
+2026-04-04 14:57:48,998 - sagealphagal - INFO - INSERTED: Chocolate Peanut Butter Overnight Oats Made While You Sleep
+2026-04-04 14:57:52,152 - sagealphagal - INFO - INSERTED: Craving Something Sweet? These Vegan Thumbprint Cookies Will Melt In Your Mouth
+2026-04-04 14:57:52,152 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/valentines-day-marshmallows/
+2026-04-04 14:57:52,152 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lotion-bar-recipe/
+2026-04-04 14:57:55,312 - sagealphagal - INFO - INSERTED: Easy, 5-Minute Avocado Crema Recipe (Includes Vegan Option)
+2026-04-04 14:57:58,468 - sagealphagal - INFO - INSERTED: How To Make Chicken Cutlets At Home
+2026-04-04 14:57:58,468 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-recipes/
+2026-04-04 14:57:58,468 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/stuffed-jalapenos/
+2026-04-04 14:58:01,620 - sagealphagal - INFO - INSERTED: Sheet Pan Pancakes: A Breakfast Game Changer
+2026-04-04 14:58:04,777 - sagealphagal - INFO - INSERTED: Creamy Instant Pot Rice Pudding: Dairy-Free And Delicious
+2026-04-04 14:58:07,927 - sagealphagal - INFO - INSERTED: Easy Homemade Vegetable Broth Using Kitchen Scraps
+2026-04-04 14:58:07,927 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cherry-bread-recipe/
+2026-04-04 14:58:07,927 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/tofu-pancakes/
+2026-04-04 14:58:11,104 - sagealphagal - INFO - INSERTED: This Spinach Salad With Peaches Is Basically Summer In A Bowl
+2026-04-04 14:58:14,283 - sagealphagal - INFO - INSERTED: Grated Egg Avocado Toast With Endless Topping Options
+2026-04-04 14:58:14,284 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-breakfast-recipes/
+2026-04-04 14:58:18,099 - sagealphagal - INFO - INSERTED: 15-Minute Arugula Salad With Watermelon And Fresh Herbs
+2026-04-04 14:58:18,099 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-nutella-recipe/
+2026-04-04 14:58:21,297 - sagealphagal - INFO - INSERTED: Best Leftover Turkey Sandwich Recipes For Post-Holiday Magic
+2026-04-04 14:58:24,453 - sagealphagal - INFO - INSERTED: Soup’S On! 18 Fantastic Soup Recipes To Make This Fall
+2026-04-04 14:58:27,618 - sagealphagal - INFO - INSERTED: Effortless Winter Fruit Salad Perfect For Any Meal
+2026-04-04 14:58:30,781 - sagealphagal - INFO - INSERTED: Easy, Cheesy Asparagus Tart (Includes Dairy-Free Option)
+2026-04-04 14:58:30,782 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-chicken-noodle-soup/
+2026-04-04 14:58:33,961 - sagealphagal - INFO - INSERTED: Greek Yogurt Bowl: A Protein-Packed Way To Start Your Day
+2026-04-04 14:58:37,125 - sagealphagal - INFO - INSERTED: Best Taco Meat Recipe For Alpha Gals
+2026-04-04 14:58:40,312 - sagealphagal - INFO - INSERTED: Simple Quinoa Stuffed Bell Peppers For Weeknight Meals
+2026-04-04 14:58:43,466 - sagealphagal - INFO - INSERTED: How To Make Hummus That Beats Store-Bought Every Time
+2026-04-04 14:58:46,625 - sagealphagal - INFO - INSERTED: Sunshine In A Glass: Sugar Free Lemonade
+2026-04-04 14:58:49,781 - sagealphagal - INFO - INSERTED: From Classic To Creative: 13 Fried Chicken Sides
+2026-04-04 14:58:52,926 - sagealphagal - INFO - INSERTED: 20 Easy Shrimp Recipes For Dinner Your Family Will Love
+2026-04-04 14:58:56,084 - sagealphagal - INFO - INSERTED: Easy Sweet Potato Casserole With Pecans And Crumble Topping
+2026-04-04 14:58:59,248 - sagealphagal - INFO - INSERTED: Easy Bagel Breakfast Sandwich With Avocado And Egg
+2026-04-04 14:59:02,412 - sagealphagal - INFO - INSERTED: S’Mores Trail Mix Recipe For Sweet, Crunchy Fun
+2026-04-04 14:59:05,570 - sagealphagal - INFO - INSERTED: Creamy Chai Rice Pudding In An Instant Pot (Easy, Vegan)
+2026-04-04 14:59:08,751 - sagealphagal - INFO - INSERTED: Classic Mojito Mocktail With A Lemony Twist
+2026-04-04 14:59:08,751 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-lasagna/
+2026-04-04 14:59:08,751 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-and-rice-recipes/
+2026-04-04 14:59:08,751 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-soup-recipes/
+2026-04-04 14:59:11,904 - sagealphagal - INFO - INSERTED: Easy Balsamic Glaze Recipe You Can Make In Minutes
+2026-04-04 14:59:11,904 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-powdered-sugar/
+2026-04-04 14:59:11,904 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chocolate-covered-strawberries/
+2026-04-04 14:59:15,060 - sagealphagal - INFO - INSERTED: 20 Leftover Turkey Recipes That Will Make You Crave Seconds
+2026-04-04 14:59:18,219 - sagealphagal - INFO - INSERTED: Boursin-Stuffed Mushrooms That Disappear In Minutes (Includes Vegan Option)
+2026-04-04 14:59:18,219 - main - INFO - [sagealphagal] Summary — found: 84, inserted: 56, skipped: 26, errors: 2
+2026-04-04 14:59:18,219 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-04 14:59:18,219 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 14:59:18,219 - main - INFO - Found: 184, Inserted: 84, Skipped: 90, Errors: 10
+2026-04-04 15:20:02,087 - alphagaldiet_net - ERROR - fetch failed for https://alphagaldiet.net/recipes/page/16/?et_blog: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-04 15:20:06,400 - alphagaldiet_net - WARNING - WPRM container not found, falling back to heuristic
+2026-04-04 15:20:10,353 - alphagaldiet_net - WARNING - WPRM container not found, falling back to heuristic
+2026-04-04 15:20:10,355 - main - INFO - [alphagaldiet_net] Summary — found: 97, inserted: 2, skipped: 0, errors: 0
+2026-04-04 15:20:10,357 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 15:20:10,357 - main - INFO - Found: 97, Inserted: 2, Skipped: 0, Errors: 0
+2026-04-04 15:20:10,357 - main - INFO - Dry-run complete. No database changes made.
+2026-04-04 16:54:11,321 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-04 16:54:11,328 - main - INFO - Connected to database
+2026-04-04 16:54:11,328 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-04 16:54:11,329 - main - INFO - Index strategy: index_page
+2026-04-04 16:54:13,627 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/01/asparagus-soup/
+2026-04-04 16:54:13,628 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/20/out-of-this-world-waffles/
+2026-04-04 16:54:13,628 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/bean-recipes
+2026-04-04 16:54:13,629 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/07/all-american-turkey-meatloaf/
+2026-04-04 16:54:13,629 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/06/08/fresh-tomato-and-basil-sauce/
+2026-04-04 16:54:13,630 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/28/vegetable-and-tofu-pad-thai/
+2026-04-04 16:54:13,631 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/14/vegetarian-egg-rolls/
+2026-04-04 16:54:13,631 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/05/11/vegetarian-eggs-benedict/
+2026-04-04 16:54:13,632 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/13/parsley-potatoes/
+2026-04-04 16:54:13,633 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/30/bowties-chicken-olives/
+2026-04-04 16:54:13,633 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/24/raspberry-angel-pie/
+2026-04-04 16:54:13,633 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/poultry
+2026-04-04 16:54:13,634 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/11/broccoli-fettuccine-alfredo/
+2026-04-04 16:54:13,634 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/06/12/soy-lime-grilled-chicken-thighs/
+2026-04-04 16:54:13,634 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/20/kahlua-glazed-carrots/
+2026-04-04 16:54:13,634 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/02/baked-beans-quintet/
+2026-04-04 16:54:13,635 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/05/perrys-potato-soup/
+2026-04-04 16:54:16,064 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-04 16:54:16,065 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/23/black-beans-and-yellow-rice/
+2026-04-04 16:54:16,066 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/11/roasted-winter-veggies/
+2026-04-04 16:54:16,066 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/31/spaghetti-and-meatballs/
+2026-04-04 16:54:16,067 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/09/02/summer-veggie-penne/
+2026-04-04 16:54:16,068 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/08/11/eggplant-fries/
+2026-04-04 16:54:16,069 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/11/01/vegetarian-chili/
+2026-04-04 16:54:16,069 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/vegetables
+2026-04-04 16:54:16,070 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/09/15/chicken-anna/
+2026-04-04 16:54:16,070 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/22/zucchini-honey-bread/
+2026-04-04 16:54:16,071 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/10/vegetable-cheese-quiche/
+2026-04-04 16:54:16,071 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/16/eggplant-stacks/
+2026-04-04 16:54:16,072 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/01/spinach-and-cheddar-strata/
+2026-04-04 16:54:16,072 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/28/chocolate-bread-pudding/
+2026-04-04 16:54:16,072 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/pasta
+2026-04-04 16:54:16,073 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/07/03/baby-blue-salad/
+2026-04-04 16:54:16,073 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/06/06/chilled-strawberry-soup/
+2026-04-04 16:54:16,073 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/05/20/cranberry-apple-sweet-potatoes/
+2026-04-04 16:54:16,074 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/22/roasted-winter-veggie-soup/
+2026-04-04 16:54:16,074 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/desserts
+2026-04-04 16:54:16,074 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/10/22/apple-and-pecan-acorn-squash/
+2026-04-04 16:54:16,075 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/09/04/sesame-chicken-kabobs/
+2026-04-04 16:54:16,075 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/05/pesto-pasta/
+2026-04-04 16:54:16,076 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/eggs-cheese
+2026-04-04 16:54:16,076 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/10/08/heath-bar-apple-dip/
+2026-04-04 16:54:16,076 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/11/18/spinach-orzo-salad/
+2026-04-04 16:54:16,076 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/salads-sandwiches
+2026-04-04 16:54:16,077 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/28/spinach-green-onion-and-smoked-gouda-quiche/
+2026-04-04 16:54:16,077 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/13/easy-beans-and-rice-with-cilantro/
+2026-04-04 16:54:16,077 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/09/03/mandarin-spinach-salad/
+2026-04-04 16:54:16,077 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/06/19/creamy-rotini-with-yellow-squash-and-turkey-bacon/
+2026-04-04 16:54:16,077 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/soups
+2026-04-04 16:54:16,077 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/breads-muffins
+2026-04-04 16:54:16,078 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/03/03/sloppy-joes/
+2026-04-04 16:54:16,078 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/04/10/apple-walnut-ravioli/
+2026-04-04 16:54:16,078 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/07/02/bean-and-salsa-tortillas/
+2026-04-04 16:54:16,078 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/29/egg-cups/
+2026-04-04 16:54:16,078 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 0, skipped: 53, errors: 1
+2026-04-04 16:54:16,078 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-04 16:54:16,078 - main - INFO - Index strategy: index_page
+2026-04-04 16:54:20,887 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-04 16:54:20,888 - alphagalallergy - INFO - SKIP (exists): https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/#print?share=print
+2026-04-04 16:54:23,524 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-04 16:54:25,912 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-04 16:54:28,555 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-04 16:54:30,556 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-04 16:54:33,407 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-04 16:54:36,408 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-04 16:54:36,408 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 1, errors: 7
+2026-04-04 16:54:36,408 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-04 16:54:36,408 - main - INFO - Index strategy: paginated_blog
+2026-04-04 16:54:46,091 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/salmon-cakes-salmon-burgers.html
+2026-04-04 16:54:46,091 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/answers-to-all-my-crazy-questions.html
+2026-04-04 16:54:46,091 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/living-dairy-free-nutrient-replacement.html
+2026-04-04 16:54:46,092 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-janet.html
+2026-04-04 16:54:46,092 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-8-asking-for-help-getting-settled-in.html
+2026-04-04 16:54:46,093 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/french-toast-alpha-gal-style.html
+2026-04-04 16:54:46,093 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-kathleen.html
+2026-04-04 16:54:46,093 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-tammy.html
+2026-04-04 16:54:46,093 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/01/mardi-gras-time-shrimp-grits_13.html
+2026-04-04 16:54:46,093 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/preventing-next-tick-bite.html
+2026-04-04 16:54:46,094 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-4-waiting-game.html
+2026-04-04 16:54:46,094 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-5-mixed-grill-beware.html
+2026-04-04 16:54:46,094 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/shrimp-chicken-anduille-gumbo-recipe.html
+2026-04-04 16:54:46,094 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-6-reading-menus-and-asking-questions.html
+2026-04-04 16:54:46,094 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/holiday-sugar-cookie-recipe-alpha-gal.html
+2026-04-04 16:54:46,095 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/updated-test-results-december-2016.html
+2026-04-04 16:54:46,095 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-french.html
+2026-04-04 16:54:46,095 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/general-guidelines-what-works-for-me.html
+2026-04-04 16:54:46,095 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/cross-contact-food-allergies.html
+2026-04-04 16:54:46,095 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/news-links-alpha-gal-allergy.html
+2026-04-04 16:54:46,095 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-9-back-to-work-and-seeking-out.html
+2026-04-04 16:54:46,096 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/prelude-to-alpha-gal-up-to-day-3.html
+2026-04-04 16:54:46,096 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/egglettes-alpha-gal-friendly.html
+2026-04-04 16:54:46,096 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/10/alpha-gal-friendly-turkey-meatloaf.html
+2026-04-04 16:54:46,096 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/gluten-free-alpha-gal-friendly-pizza.html
+2026-04-04 16:54:46,096 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-7-compiling-food-lists.html
+2026-04-04 16:54:46,097 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/where-in-world-is-alpha-gal.html
+2026-04-04 16:54:46,097 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/thanksgiving-treat.html
+2026-04-04 16:54:46,097 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/football-season-time-for-some-chili.html
+2026-04-04 16:54:46,097 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/allergy-message-in-english-and-spanish.html
+2026-04-04 16:54:46,097 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/how-many-people-do-you-know.html
+2026-04-04 16:54:46,098 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/australia-mammalian-meat-allergy-mma.html
+2026-04-04 16:54:46,098 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/goofed-up-cross-contact.html
+2026-04-04 16:54:46,098 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-violet.html
+2026-04-04 16:54:46,098 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/chocolate-cake.html
+2026-04-04 16:54:46,098 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-10-pizza-really.html
+2026-04-04 16:54:46,099 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-11-blood-test-results-are-in.html
+2026-04-04 16:54:46,099 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-rob.html
+2026-04-04 16:54:46,099 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 0, skipped: 38, errors: 0
+2026-04-04 16:54:46,099 - main - INFO - === Feathers and Fins ===
+2026-04-04 16:54:46,099 - main - INFO - Index strategy: category_pages
+2026-04-04 16:54:49,135 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-04 16:54:49,139 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-04 16:54:49,140 - main - INFO - === Sage Alpha Gal ===
+2026-04-04 16:54:49,140 - main - INFO - Index strategy: category_pages
+2026-04-04 16:55:18,120 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chocolate-covered-strawberries/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - INSERTED: Boursin Hasselback Potatoes: A Recipe For The Perfect Side Dish
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-chicken-enchiladas/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lemon-mojito-mocktail/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/avocado-crema-recipe/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cast-iron-skillet-chicken-recipes/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/bbq-chicken-sides/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/bagel-breakfast-sandwich/
+2026-04-04 16:55:21,318 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sundried-tomato-feta-savory-quick-bread/
+2026-04-04 16:55:21,319 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/dairy-free-caramel-sauce/
+2026-04-04 16:55:21,319 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-white-chicken-chili/
+2026-04-04 16:55:24,503 - sagealphagal - INFO - INSERTED: Sweet Squares: Allergy-Friendly Rice Crispy Treats Recipe
+2026-04-04 16:55:24,504 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/fried-chicken-sides/
+2026-04-04 16:55:24,504 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sugar-free-lemonade-recipe/
+2026-04-04 16:55:24,504 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-chicken-stock/
+2026-04-04 16:55:24,504 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-lasagna/
+2026-04-04 16:55:27,706 - sagealphagal - INFO - INSERTED: Sour Power: How To Make Vegan Buttermilk For Baking
+2026-04-04 16:55:30,880 - sagealphagal - INFO - INSERTED: Easy Gluten Free Granola Recipe (Better Than Store-Bought)
+2026-04-04 16:55:34,070 - sagealphagal - INFO - INSERTED: Scrumptious Strawberry Muffins With Cream Cheese Filling (Includes Dairy-Free And Vegan Options)
+2026-04-04 16:55:34,071 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/white-chicken-chili/
+2026-04-04 16:55:34,071 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-salad-recipes/
+2026-04-04 16:55:34,071 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/boursin-stuffed-mushrooms/
+2026-04-04 16:55:34,071 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cherry-bread-recipe/
+2026-04-04 16:55:34,071 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/mushroom-toast-recipe/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-pumpkin-spice-latte/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-stuffed-portobello-mushrooms/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-recipes/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-powdered-sugar/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/peaches-and-cream-baked-oatmeal/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-cookbooks/
+2026-04-04 16:55:34,072 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/goat-cheese-and-basil-stuffed-peaches/
+2026-04-04 16:55:34,073 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/ocean-water-cocktail/
+2026-04-04 16:55:34,073 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/smoked-salmon-omelet/
+2026-04-04 16:55:37,240 - sagealphagal - INFO - INSERTED: 16 Delicious Chicken Marsala Side Dishes
+2026-04-04 16:55:37,240 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/valentines-day-marshmallows/
+2026-04-04 16:55:37,240 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/asparagus-tart/
+2026-04-04 16:55:40,418 - sagealphagal - INFO - INSERTED: Mussels In Cream Sauce (Includes Dairy-Free Option)
+2026-04-04 16:55:40,418 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-salad-recipes/
+2026-04-04 16:55:40,419 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/no-bake-peanut-butter-bars/
+2026-04-04 16:55:40,419 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-vegetable-broth/
+2026-04-04 16:55:40,419 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-meatball-recipe/
+2026-04-04 16:55:43,596 - sagealphagal - INFO - INSERTED: Craving Chocolate? Try This Easy Chocolate Chia Seed Pudding
+2026-04-04 16:55:43,597 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/pancake-toppings/
+2026-04-04 16:55:46,774 - sagealphagal - INFO - INSERTED: Homemade Brazilian Cheese Bread (Pão De Queijo) (With Dairy-Free Option)
+2026-04-04 16:55:46,774 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-breakfast-recipes/
+2026-04-04 16:55:46,774 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/jennifer-aniston-quinoa-salad/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-soup-recipes/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-peanut-butter/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/amaretto-cherry-chip-ice-cream/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-stuffed-bell-peppers/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sweet-potato-casserole-with-pecans/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-thumbprint-cookies/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-salad-with-peaches/
+2026-04-04 16:55:46,775 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/taco-meat-recipe/
+2026-04-04 16:55:49,971 - sagealphagal - INFO - INSERTED: 10 Quick And Easy Quinoa Recipes With Chicken
+2026-04-04 16:55:49,971 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grilling-fish/
+2026-04-04 16:55:53,171 - sagealphagal - INFO - INSERTED: From Garden To Glass: How To Make Lavender Syrup
+2026-04-04 16:55:56,354 - sagealphagal - INFO - INSERTED: Comfort Food Feast: Barefoot Contessa Chicken Marsala Recipe
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/easy-langostino-lobster-roll-recipe/
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-taco-seasoning/
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-recipes-for-dinner/
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/peach-lassi/
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-chocolate-chip-cookie-recipes/
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-recipes/
+2026-04-04 16:55:56,354 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-christmas-cookies/
+2026-04-04 16:55:56,355 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grated-egg-avocado-toast/
+2026-04-04 16:55:56,355 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/tofu-pancakes/
+2026-04-04 16:55:56,355 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chai-rice-pudding/
+2026-04-04 16:55:59,530 - sagealphagal - INFO - INSERTED: 18 Delicious Quinoa Bowl Recipes For Alpha Gals
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/balsamic-glaze-recipe/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-soup-recipes/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lotion-bar-recipe/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-and-rice-recipes/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-chicken-noodle-soup/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-sandwich-recipes/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sides-for-grilled-chicken/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-rice-pudding/
+2026-04-04 16:55:59,531 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-hummus/
+2026-04-04 16:55:59,532 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sheet-pan-pancakes-recipe/
+2026-04-04 16:55:59,532 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lavender-chamomile-cake-recipe/
+2026-04-04 16:56:02,695 - sagealphagal - INFO - INSERTED: 9 Quinoa Dessert Recipes That Make This Superfood Taste Like Heaven
+2026-04-04 16:56:02,696 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/smores-trail-mix/
+2026-04-04 16:56:02,696 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-hot-chocolate-recipes/
+2026-04-04 16:56:02,696 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-guacamole-inspired-by-boudros/
+2026-04-04 16:56:02,696 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/winter-fruit-salad/
+2026-04-04 16:56:02,696 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/stuffed-jalapenos/
+2026-04-04 16:56:05,859 - sagealphagal - INFO - INSERTED: Dairy Free Baking: Proven Tips For Beginners
+2026-04-04 16:56:05,859 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-cook-frozen-salmon-in-the-air-fryer/
+2026-04-04 16:56:05,859 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/arugula-salad-with-watermelon/
+2026-04-04 16:56:05,860 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/teriyaki-shrimp-recipe/
+2026-04-04 16:56:05,860 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/montana-mule-moscow-mule-variation-with-huckleberry-vodka/
+2026-04-04 16:56:09,041 - sagealphagal - INFO - INSERTED: Fresh And Fruity Raspberry Muffins (With Vegan And Dairy-Free Options)
+2026-04-04 16:56:09,041 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-enchilada-sauce/
+2026-04-04 16:56:09,041 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-peach-ice-cream-thats-totally-dairy-free/
+2026-04-04 16:56:09,041 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-beans-for-protein/
+2026-04-04 16:56:12,272 - sagealphagal - INFO - INSERTED: Fast And Easy Banana Blueberry Muffins (With Vegan And Dairy-Free Options)
+2026-04-04 16:56:12,273 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-salad-with-strawberries-and-feta/
+2026-04-04 16:56:12,273 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/baked-apple-cider-donuts/
+2026-04-04 16:56:12,273 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chicken-lettuce-wraps/
+2026-04-04 16:56:12,274 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chicken-cutlets/
+2026-04-04 16:56:12,274 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/greek-yogurt-bowl-recipe/
+2026-04-04 16:56:12,274 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-nutella-recipe/
+2026-04-04 16:56:15,446 - sagealphagal - INFO - INSERTED: Easy Baked Eggs Florentine For Two
+2026-04-04 16:56:15,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-seasoning-recipe/
+2026-04-04 16:56:15,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/slow-cooker-black-beans/
+2026-04-04 16:56:15,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chocolate-peanut-butter-overnight-oats/
+2026-04-04 16:56:15,447 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 18, skipped: 88, errors: 0
+2026-04-04 16:56:15,447 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-04 16:56:15,447 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-04 16:56:15,447 - main - INFO - Found: 206, Inserted: 18, Skipped: 180, Errors: 8

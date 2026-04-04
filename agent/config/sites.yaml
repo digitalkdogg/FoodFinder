@@ -1,0 +1,144 @@
+# ============================================================
+# DRIVER DEFINITIONS
+# Selectors here are the defaults for each platform.
+# Individual sites can override any selector in their own entry.
+# ============================================================
+
+driver_defaults:
+  wordpress:
+    # How to find recipe links when index_strategy is "index_page"
+    index_link_selector: "div.entry-content a[href]"
+
+    # How to find recipe links when index_strategy is "category_pages"
+    archive_post_link_selector: "h2.entry-title a, article h2 a[rel='bookmark']"
+
+    # Pagination link for category archive pages
+    next_page_selector: "a.next.page-numbers"
+
+    # On the recipe page itself:
+    title_selector: "h1.entry-title, h2.entry-title"
+    category_selector: "a[rel='category tag']"
+    tag_selector: "a[rel='tag']"
+    body_selector: "div.entry-content"
+    image_selector: "meta[property='og:image']"   # use content attr
+    date_selector: "time.entry-date"               # use datetime attr
+
+    # WPRM plugin selectors (used when wprm: true on a site)
+    wprm_ingredient_selector: "li.wprm-recipe-ingredient"
+    wprm_instruction_selector: "li.wprm-recipe-instruction-text"
+    wprm_title_selector: "span.wprm-recipe-name"
+
+    # Verb heuristic: first paragraph/line containing one of these words
+    # marks the start of instructions when no recipe plugin is present
+    instruction_trigger_verbs:
+      - Preheat
+      - Combine
+      - Mix
+      - Stir
+      - Bake
+      - Cook
+      - Heat
+      - Boil
+      - Simmer
+      - Add
+      - Place
+      - Pour
+      - Drain
+      - Season
+      - Whisk
+      - Blend
+      - Chop
+      - Slice
+
+  blogspot:
+    archive_post_link_selector: "h3.post-title a, h2.post-title a, a.post-title-link"
+    next_page_selector: "a#Blog1_blog-pager-older-link"
+    title_selector: "h3.post-title, h2.post-title"
+    category_selector: "span.post-labels a"
+    tag_selector: "span.post-labels a"    # same elements; first = category, rest = tags
+    body_selector: "div.post-body"
+    image_selector: "div.post-body img"   # use src attr; skip blogger UI images
+    date_selector: "abbr.published, h2.date-header"
+    instruction_trigger_verbs:
+      - Preheat
+      - Combine
+      - Mix
+      - Stir
+      - Bake
+      - Cook
+      - Heat
+      - Boil
+      - Add
+      - Place
+      - Pour
+
+# ============================================================
+# SITE DEFINITIONS
+# ============================================================
+
+sites:
+
+  - id: alphagalcooking
+    enabled: true
+    site_name: "Alpha-Gal Cooking"
+    base_url: "https://alphagalcooking.com"
+    driver: wordpress
+    index_url: "https://alphagalcooking.com/recipeindex/"
+    index_strategy: index_page
+    delay_seconds: 2
+    # Override: the index page links go to wordpress.com subdomain
+    index_link_filter: "alphagalcooking.wordpress.com"
+
+  - id: alphagalallergy
+    enabled: true
+    site_name: "The Alpha Gal Allergy Cooking"
+    base_url: "https://alphagalallergy.wordpress.com"
+    driver: wordpress
+    index_url: "https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/"
+    index_strategy: index_page
+    delay_seconds: 2
+    index_link_filter: "alphagalallergy.wordpress.com"
+
+  - id: alphagaldiet_blogspot
+    enabled: true
+    site_name: "Alpha Gal Diet (Blogspot)"
+    base_url: "http://alphagaldiet.blogspot.com"
+    driver: blogspot
+    index_url: "http://alphagaldiet.blogspot.com"
+    index_strategy: paginated_blog
+    delay_seconds: 3
+    # Skip Blogspot UI images (profile pics, buttons) by filtering src
+    image_src_skip_pattern: "blogger.com/img"
+
+  - id: feathersfins
+    enabled: true
+    site_name: "Feathers and Fins"
+    base_url: "https://feathersfins.com"
+    driver: wordpress
+    index_url: "https://feathersfins.com/category/recipes/"
+    index_strategy: category_pages
+    delay_seconds: 2
+
+  - id: sagealphagal
+    enabled: true
+    site_name: "Sage Alpha Gal"
+    base_url: "https://sagealphagal.com"
+    driver: wordpress
+    index_url: "https://sagealphagal.com/category/recipes/"
+    index_strategy: category_pages
+    delay_seconds: 3
+    wprm: false   # check at runtime; fall back to verb heuristic if not present
+
+  - id: alphagaldiet_net
+    enabled: false
+    site_name: "The Alpha Gal Diet"
+    base_url: "https://alphagaldiet.net"
+    driver: wordpress
+    index_url: "https://alphagaldiet.net/recipes/"
+    index_strategy: category_pages
+    delay_seconds: 3
+    wprm: true    # confirmed: uses WordPress Recipe Maker plugin
+    # Override: the index page uses a different pagination link pattern
+    next_page_selector: "a[href*='/recipes/page/']"
+    # Override: recipe links on the index are in h2 tags in a card grid
+    archive_post_link_selector: "h2 a[href*='alphagaldiet.net']"
