@@ -68,7 +68,7 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
         {(totalSteps > 0 || totalIngredients > 0) && (
           <div className="mt-4">
             <div className="flex items-center justify-between text-base mb-2">
-              <span className="text-slate-600">
+              <span className="text-slate-600 text-lg">
                 Progress: {completedSteps + completedIngredients} of{" "}
                 {totalSteps + totalIngredients} items
               </span>
@@ -158,7 +158,7 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
                     <span className="font-semibold block text-lg mb-2">
                       Step {step.step_number}
                     </span>
-                    <span className="text-base leading-relaxed">
+                    <span className="text-base leading-relaxed text-lg">
                       {step.instruction_text}
                     </span>
                   </label>

@@ -151,6 +151,33 @@ class BaseDriver(ABC):
         steps = [s for s in steps if len(s.strip()) > 10]
         return steps if steps else []
 
+    def _is_valid_recipe(self, name: str, ingredients: list, instructions: str) -> tuple[bool, str]:
+        """Check if parsed content is a real recipe or just generic content.
+
+        Returns (is_valid, reason) tuple.
+        """
+        # Check if title contains generic/non-recipe keywords
+        generic_keywords = [
+            "guide", "tips", "how to", "how-to", "roundup", "round-up",
+            "tutorial", "beginner", "faq", "substitut", "comparison",
+            "storage", "storing", "nutrition", "calorie", "recipes"
+        ]
+        name_lower = name.lower()
+        for keyword in generic_keywords:
+            if keyword in name_lower:
+                return False, f"Generic content ({keyword})"
+
+        # Check minimum ingredients (real recipes have at least 3)
+        ingredient_count = len([ing for ing in ingredients if ing.get("name", "").strip()])
+        if ingredient_count < 3:
+            return False, f"Too few ingredients ({ingredient_count})"
+
+        # Check minimum instruction length (real recipes have substantial instructions)
+        if not instructions or len(instructions.strip()) < 50:
+            return False, "Instructions too short or missing"
+
+        return True, "Valid recipe"
+
     def run(self, dry_run=False, limit=None) -> dict:
         """Main execution method."""
         from scraper import db
@@ -202,6 +229,13 @@ class BaseDriver(ABC):
                 instructions = normalize_instructions(raw.get("instructions", ""))
                 image_url = raw.get("image_url")
                 pub_date = parse_date(raw.get("publication_date") or url)
+
+                # Validate that this is a real recipe, not generic content
+                is_valid, reason = self._is_valid_recipe(name, ingredients, instructions)
+                if not is_valid:
+                    self.logger.info(f"SKIP ({reason}): {name}")
+                    summary["skipped"] += 1
+                    continue
 
                 if dry_run:
                     self._print_recipe(

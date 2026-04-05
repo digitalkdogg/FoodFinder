@@ -2245,3 +2245,343 @@ pymysql.err.OperationalError: (1205, 'Lock wait timeout exceeded; try restarting
 2026-04-05 13:00:18,461 - main - INFO - 
 === GRAND TOTAL ===
 2026-04-05 13:00:18,461 - main - INFO - Found: 206, Inserted: 0, Skipped: 198, Errors: 8
+2026-04-05 15:48:13,707 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 15:48:13,714 - main - INFO - Connected to database
+2026-04-05 15:48:13,715 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 15:48:13,715 - main - INFO - Index strategy: index_page
+2026-04-05 15:48:20,450 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Turkey And Bean Chili
+2026-04-05 15:48:26,773 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 4, skipped: 1, errors: 0
+2026-04-05 15:48:26,773 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 15:48:26,773 - main - INFO - Index strategy: index_page
+2026-04-05 15:48:31,364 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-05 15:48:35,987 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-05 15:48:38,916 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-05 15:48:40,916 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-05 15:48:40,917 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 1, skipped: 0, errors: 4
+2026-04-05 15:48:40,917 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 15:48:40,917 - main - INFO - Index strategy: paginated_blog
+2026-04-05 15:48:53,850 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 4 - The Waiting Game
+2026-04-05 15:48:57,022 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Day 7 - Compiling Food Lists
+2026-04-05 15:49:00,202 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Goofed Up - Cross Contact
+2026-04-05 15:49:06,531 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): French Toast - Alpha Gal Style
+2026-04-05 15:49:06,531 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 1, skipped: 4, errors: 0
+2026-04-05 15:49:06,531 - main - INFO - === Feathers and Fins ===
+2026-04-05 15:49:06,531 - main - INFO - Index strategy: category_pages
+2026-04-05 15:49:09,466 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-05 15:49:09,475 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-05 15:49:09,475 - main - INFO - === Sage Alpha Gal ===
+2026-04-05 15:49:09,475 - main - INFO - Index strategy: category_pages
+2026-04-05 15:49:47,767 - sagealphagal - INFO - SKIP (Generic content (tips)): Simple Tips For Grilling Fish Perfectly Every Time
+2026-04-05 15:49:50,931 - sagealphagal - INFO - SKIP (Too few ingredients (0)): 15-Minute Spinach Salad With Strawberries And Feta (Includes Dairy-Free Option)
+2026-04-05 15:49:54,093 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 3, skipped: 2, errors: 0
+2026-04-05 15:49:54,093 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-05 15:49:54,093 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-05 15:49:54,093 - main - INFO - Found: 206, Inserted: 9, Skipped: 7, Errors: 4
+2026-04-05 15:49:54,093 - main - INFO - Dry-run complete. No database changes made.
+2026-04-05 15:59:07,526 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 15:59:07,534 - main - INFO - Connected to database
+2026-04-05 15:59:07,534 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 15:59:07,534 - main - INFO - Index strategy: index_page
+2026-04-05 15:59:12,112 - alphagalcooking - INFO - INSERTED: Baby Blue Salad
+2026-04-05 15:59:14,226 - alphagalcooking - INFO - INSERTED: Broccoli-Fettuccine Alfredo
+2026-04-05 15:59:16,335 - alphagalcooking - INFO - SKIP (Too few ingredients (1)): Eggplant Stacks
+2026-04-05 15:59:18,452 - alphagalcooking - INFO - INSERTED: All-American Turkey Meatloaf
+2026-04-05 15:59:20,545 - alphagalcooking - INFO - INSERTED: Chilled Strawberry Soup
+2026-04-05 15:59:22,653 - alphagalcooking - INFO - INSERTED: Easy Beans And Rice With Cilantro
+2026-04-05 15:59:24,754 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Spaghetti And Meatballs
+2026-04-05 15:59:26,867 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Veggie Burritos
+2026-04-05 15:59:28,971 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Kahlua-Glazed Carrots
+2026-04-05 15:59:31,091 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Turkey And Bean Chili
+2026-04-05 15:59:33,196 - alphagalcooking - INFO - INSERTED: Cranberry-Apple Sweet Potatoes
+2026-04-05 15:59:35,315 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Strawberry-Almond Oatmeal Bake
+2026-04-05 15:59:37,420 - alphagalcooking - INFO - INSERTED: Vegetable And Tofu Pad Thai
+2026-04-05 15:59:39,522 - alphagalcooking - INFO - INSERTED: Zucchini-Honey Bread
+2026-04-05 15:59:41,638 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Thanksgiving Sides
+2026-04-05 15:59:43,740 - alphagalcooking - INFO - INSERTED: Baked Beans Quintet
+2026-04-05 15:59:45,845 - alphagalcooking - INFO - INSERTED: Egg Cups
+2026-04-05 15:59:47,941 - alphagalcooking - INFO - SKIP (Too few ingredients (2)): Roasted Winter Veggie Soup
+2026-04-05 15:59:50,041 - alphagalcooking - INFO - INSERTED: Soy-Lime Grilled Chicken Thighs
+2026-04-05 15:59:52,143 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Black Beans And Yellow Rice
+2026-04-05 15:59:54,243 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Sesame Chicken Kabobs
+2026-04-05 15:59:56,351 - alphagalcooking - INFO - INSERTED: Chicken Anna
+2026-04-05 15:59:58,454 - alphagalcooking - INFO - INSERTED: Chocolate Bread Pudding
+2026-04-05 16:00:00,573 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): ‘Tis The Season
+2026-04-05 16:00:02,675 - alphagalcooking - INFO - INSERTED: Vegetable-Cheese Quiche
+2026-04-05 16:00:04,784 - alphagalcooking - INFO - INSERTED: Eggplant Fries
+2026-04-05 16:00:06,888 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Vegetarian Eggs Benedict
+2026-04-05 16:00:09,001 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Salmon Caesar Salad
+2026-04-05 16:00:11,101 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Vegetarian Egg Rolls
+2026-04-05 16:00:13,208 - alphagalcooking - INFO - INSERTED: Perry’S Potato Soup
+2026-04-05 16:00:15,318 - alphagalcooking - INFO - INSERTED: Summer Veggie Penne
+2026-04-05 16:00:17,421 - alphagalcooking - INFO - INSERTED: Apple-Walnut Ravioli
+2026-04-05 16:00:19,526 - alphagalcooking - INFO - INSERTED: Heath Bar Apple Dip
+2026-04-05 16:00:21,638 - alphagalcooking - INFO - INSERTED: Out-Of-This-World Waffles
+2026-04-05 16:00:23,738 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Vegetarian Chili
+2026-04-05 16:00:25,828 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Pesto Pasta
+2026-04-05 16:00:27,949 - alphagalcooking - INFO - INSERTED: Fresh Tomato And Basil Sauce
+2026-04-05 16:00:30,149 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-05 16:00:32,254 - alphagalcooking - INFO - INSERTED: Mandarin Spinach Salad
+2026-04-05 16:00:34,353 - alphagalcooking - INFO - INSERTED: Parsley Potatoes
+2026-04-05 16:00:36,459 - alphagalcooking - INFO - INSERTED: Spinach Orzo Salad
+2026-04-05 16:00:38,570 - alphagalcooking - INFO - INSERTED: Sloppy Joes
+2026-04-05 16:00:40,680 - alphagalcooking - INFO - INSERTED: Apple And Pecan Acorn Squash
+2026-04-05 16:00:42,785 - alphagalcooking - INFO - INSERTED: Creamy Rotini With Yellow Squash And Turkey Bacon
+2026-04-05 16:00:44,895 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Turkey And Bean Chili
+2026-04-05 16:00:47,011 - alphagalcooking - INFO - INSERTED: Bowties, Chicken, & Olives
+2026-04-05 16:00:49,131 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): ‘Tis The Season
+2026-04-05 16:00:51,237 - alphagalcooking - INFO - INSERTED: Asparagus Soup
+2026-04-05 16:00:53,350 - alphagalcooking - INFO - INSERTED: Spinach, Green Onion, And Smoked Gouda Quiche
+2026-04-05 16:00:55,454 - alphagalcooking - INFO - INSERTED: Bean And Salsa Tortillas
+2026-04-05 16:00:57,558 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Our Favorite Apple Pie
+2026-04-05 16:00:59,664 - alphagalcooking - INFO - INSERTED: Raspberry Angel Pie
+2026-04-05 16:01:01,768 - alphagalcooking - INFO - INSERTED: Roasted Winter Veggies
+2026-04-05 16:01:03,871 - alphagalcooking - INFO - INSERTED: Spinach And Cheddar Strata
+2026-04-05 16:01:03,871 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 34, skipped: 19, errors: 1
+2026-04-05 16:01:03,871 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 16:01:03,871 - main - INFO - Index strategy: index_page
+2026-04-05 16:01:08,090 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-05 16:01:10,566 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-05 16:01:13,148 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-05 16:01:15,903 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-05 16:01:18,332 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-05 16:01:20,994 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-05 16:01:23,059 - alphagalallergy - INFO - INSERTED: Alpha Gal Allergy Recipes
+2026-04-05 16:01:25,734 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-05 16:01:25,734 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 1, skipped: 0, errors: 7
+2026-04-05 16:01:25,734 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 16:01:25,734 - main - INFO - Index strategy: paginated_blog
+2026-04-05 16:01:38,524 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (2)): How Many People Do You Know ?
+2026-04-05 16:01:41,626 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Goofed Up - Cross Contact
+2026-04-05 16:01:44,783 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (2)): Day 8 - Asking For Help & Getting Settled In
+2026-04-05 16:01:47,952 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 5 - Mixed Grill - Beware!
+2026-04-05 16:01:51,078 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Day 7 - Compiling Food Lists
+2026-04-05 16:01:54,418 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Sharing Stories - Violet
+2026-04-05 16:01:57,583 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (1)): Sharing Stories - Kathleen
+2026-04-05 16:02:01,229 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Updated Test Results - December 2016
+2026-04-05 16:02:04,414 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Day 11 - Blood Test Results Are In
+2026-04-05 16:02:07,576 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (1)): Thanksgiving Treat
+2026-04-05 16:02:10,758 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Sharing Stories - Rob
+2026-04-05 16:02:13,947 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (1)): Gluten Free, Alpha Gal Friendly Pizza With Chicken Anduille Sausage
+2026-04-05 16:02:17,125 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Allergy Message In English And Spanish For Restaurants
+2026-04-05 16:02:20,300 - alphagaldiet_blogspot - INFO - INSERTED: Football Season - Time For Some Chili !!!
+2026-04-05 16:02:23,458 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Living Dairy Free - Nutrient Replacement
+2026-04-05 16:02:26,616 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 9 - Back To Work, And Seeking Out Resources
+2026-04-05 16:02:29,810 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (1)): Day 10 - Pizza?  Really?
+2026-04-05 16:02:32,970 - alphagaldiet_blogspot - INFO - INSERTED: Shrimp / Chicken / Anduille Gumbo Recipe - Red Meat Free, Dairy Free, Gluten Free
+2026-04-05 16:02:36,141 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Sharing Stories - French
+2026-04-05 16:02:39,309 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 6 - Reading Menus And Asking Questions
+2026-04-05 16:02:42,474 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): News Links - Alpha Gal Allergy
+2026-04-05 16:02:45,628 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Preventing The Next Tick Bite
+2026-04-05 16:02:48,822 - alphagaldiet_blogspot - INFO - SKIP (Generic content (guide)): General Guidelines - What Works For Me ... And What To Avoid
+2026-04-05 16:02:51,956 - alphagaldiet_blogspot - INFO - INSERTED: Alpha Gal Friendly - Turkey Meatloaf Recipe
+2026-04-05 16:02:55,121 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Answers To All My Crazy Questions .....
+2026-04-05 16:02:58,296 - alphagaldiet_blogspot - INFO - INSERTED: Salmon Cakes / Salmon Burgers
+2026-04-05 16:03:01,436 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 4 - The Waiting Game
+2026-04-05 16:03:04,637 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (1)): Australia - Mammalian Meat Allergy (Mma)
+2026-04-05 16:03:07,826 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Sharing Stories - Tammy
+2026-04-05 16:03:10,973 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (2)): Egglettes - Alpha Gal Friendly
+2026-04-05 16:03:14,059 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): French Toast - Alpha Gal Style
+2026-04-05 16:03:17,245 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (2)): Mardi Gras Time!   Shrimp & Grits
+2026-04-05 16:03:20,534 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Sharing Stories - Janet
+2026-04-05 16:03:23,697 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Cross Contact - Food Allergies
+2026-04-05 16:03:26,853 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Where In The World Is Alpha Gal?
+2026-04-05 16:03:30,018 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Prelude To Alpha Gal - Up To Day 3
+2026-04-05 16:03:33,184 - alphagaldiet_blogspot - INFO - INSERTED: Holiday Sugar Cookie Recipe - Alpha Gal Friendly
+2026-04-05 16:03:36,353 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Chocolate Cake!
+2026-04-05 16:03:36,353 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 5, skipped: 33, errors: 0
+2026-04-05 16:03:36,353 - main - INFO - === Feathers and Fins ===
+2026-04-05 16:03:36,353 - main - INFO - Index strategy: category_pages
+2026-04-05 16:03:39,271 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-05 16:03:39,274 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-05 16:03:39,274 - main - INFO - === Sage Alpha Gal ===
+2026-04-05 16:03:39,274 - main - INFO - Index strategy: category_pages
+2026-04-05 16:04:11,107 - sagealphagal - INFO - SKIP (Instructions too short or missing): Best Cookbooks For Alpha-Gal: Safe And Delicious Eats
+2026-04-05 16:04:14,256 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Easy Shrimp And Rice Recipes For An Alpha Gal’S Kitchen
+2026-04-05 16:04:17,461 - sagealphagal - INFO - INSERTED: Greek Yogurt Bowl: A Protein-Packed Way To Start Your Day
+2026-04-05 16:04:20,617 - sagealphagal - INFO - SKIP (Too few ingredients (2)): Easy Homemade Vegetable Broth Using Kitchen Scraps
+2026-04-05 16:04:23,758 - sagealphagal - INFO - SKIP (Instructions too short or missing): Craving Something Sweet? These Vegan Thumbprint Cookies Will Melt In Your Mouth
+2026-04-05 16:04:26,927 - sagealphagal - INFO - INSERTED: Say Goodbye To Bone Char With Homemade Powdered Sugar
+2026-04-05 16:04:30,092 - sagealphagal - INFO - INSERTED: Lavender Chamomile Cake With Strawberry Glaze
+2026-04-05 16:04:33,268 - sagealphagal - INFO - INSERTED: Scrumptious Strawberry Muffins With Cream Cheese Filling (Includes Dairy-Free And Vegan Options)
+2026-04-05 16:04:36,442 - sagealphagal - INFO - SKIP (Generic content (how to)): How To Make Hummus That Beats Store-Bought Every Time
+2026-04-05 16:04:39,601 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Craving Chocolate? Try This Easy Chocolate Chia Seed Pudding
+2026-04-05 16:04:42,765 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Easy Lotion Bar Recipe For Silky Smooth Skin
+2026-04-05 16:04:45,918 - sagealphagal - INFO - SKIP (Too few ingredients (2)): Homemade Chicken Stock That Beats Store-Bought Every Time
+2026-04-05 16:04:49,076 - sagealphagal - INFO - SKIP (Generic content (how to)): How To Make Chocolate Covered Strawberries
+2026-04-05 16:04:52,240 - sagealphagal - INFO - INSERTED: S’Mores Trail Mix Recipe For Sweet, Crunchy Fun
+2026-04-05 16:04:55,386 - sagealphagal - INFO - SKIP (Too few ingredients (2)): This Spinach Salad With Peaches Is Basically Summer In A Bowl
+2026-04-05 16:04:58,572 - sagealphagal - INFO - INSERTED: Simple Quinoa Stuffed Bell Peppers For Weeknight Meals
+2026-04-05 16:05:01,859 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Delicious, Dairy Free Caramel Sauce In Just Two Steps
+2026-04-05 16:05:05,032 - sagealphagal - INFO - SKIP (Instructions too short or missing): 30 Must-Try Quinoa Salad Recipes
+2026-04-05 16:05:08,217 - sagealphagal - INFO - INSERTED: Chicken Lettuce Wraps (In Less Than 20 Minutes)
+2026-04-05 16:05:11,363 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Easy Slow Cooker Black Beans You’Ll Want Every Week
+2026-04-05 16:05:14,529 - sagealphagal - INFO - INSERTED: Easy White Chicken Chili In A Crock-Pot
+2026-04-05 16:05:18,236 - sagealphagal - INFO - SKIP (Generic content (how to)): How To Make Peanut Butter
+2026-04-05 16:05:21,380 - sagealphagal - INFO - SKIP (Instructions too short or missing): What To Serve With White Chicken Chili: 11 Delicious Ideas
+2026-04-05 16:05:24,532 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Best Leftover Turkey Sandwich Recipes For Post-Holiday Magic
+2026-04-05 16:05:27,713 - sagealphagal - INFO - INSERTED: Comfort Food Feast: Barefoot Contessa Chicken Marsala Recipe
+2026-04-05 16:05:30,874 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Easy Bagel Breakfast Sandwich With Avocado And Egg
+2026-04-05 16:05:34,018 - sagealphagal - INFO - SKIP (Generic content (tips)): Dairy Free Baking: Proven Tips For Beginners
+2026-04-05 16:05:37,153 - sagealphagal - INFO - SKIP (Too few ingredients (1)): 43 Sweet And Savory Pancake Toppings To Try Today
+2026-04-05 16:05:40,312 - sagealphagal - INFO - SKIP (Too few ingredients (2)): 9 Quinoa Dessert Recipes That Make This Superfood Taste Like Heaven
+2026-04-05 16:05:43,484 - sagealphagal - INFO - INSERTED: 37 Sizzling Cast Iron Skillet Chicken Recipes
+2026-04-05 16:05:46,670 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Sunshine In A Glass: Sugar Free Lemonade
+2026-04-05 16:05:49,824 - sagealphagal - INFO - INSERTED: Mussels In Cream Sauce (Includes Dairy-Free Option)
+2026-04-05 16:05:53,026 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Effortless Winter Fruit Salad Perfect For Any Meal
+2026-04-05 16:05:56,187 - sagealphagal - INFO - INSERTED: Baked Apple Cider Donuts That Taste Like Fall (Includes Dairy-Free Option)
+2026-04-05 16:05:59,341 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Boursin Hasselback Potatoes: A Recipe For The Perfect Side Dish
+2026-04-05 16:06:02,509 - sagealphagal - INFO - INSERTED: Grilled Chicken Again? These Side Dishes Will Satisfy!
+2026-04-05 16:06:05,658 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Easy Sweet Potato Casserole With Pecans And Crumble Topping
+2026-04-05 16:06:08,815 - sagealphagal - INFO - INSERTED: Homemade Dairy-Free Amaretto Cherry Chip Ice Cream
+2026-04-05 16:06:11,993 - sagealphagal - INFO - INSERTED: Montana Mule: A Moscow Mule Variation With Huckleberry Vodka
+2026-04-05 16:06:15,138 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Chocolate-Covered Valentine’S Day Marshmallows
+2026-04-05 16:06:18,320 - sagealphagal - INFO - INSERTED: Bite For Bite: The Best Beans For Protein
+2026-04-05 16:06:21,475 - sagealphagal - INFO - INSERTED: Best Taco Meat Recipe For Alpha Gals
+2026-04-05 16:06:24,633 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Rise And Shine With Easy, Dairy Free Tofu Pancakes
+2026-04-05 16:06:27,778 - sagealphagal - INFO - SKIP (Generic content (how to)): How To Make Taco Seasoning So Good, You’Ll Never Buy It Again
+2026-04-05 16:06:30,953 - sagealphagal - INFO - INSERTED: Fast And Easy Banana Blueberry Muffins (With Vegan And Dairy-Free Options)
+2026-04-05 16:06:34,113 - sagealphagal - INFO - INSERTED: Mushroom Masterpiece: Spinach Stuffed Portobellos
+2026-04-05 16:06:37,260 - sagealphagal - INFO - INSERTED: Healthy Peaches And Cream Baked Oatmeal (With Dairy-Free Option)
+2026-04-05 16:06:40,444 - sagealphagal - INFO - INSERTED: Creamy Peach Lassi With Cardamom And Cinnamon (Includes Dairy-Free Option)
+2026-04-05 16:06:43,610 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Vegan Nutella: Your New Favorite Spread
+2026-04-05 16:06:46,769 - sagealphagal - INFO - SKIP (Too few ingredients (2)): Dine With A “Friend”: Jennifer Aniston Quinoa Salad
+2026-04-05 16:06:49,948 - sagealphagal - INFO - INSERTED: From Classic To Creative: 13 Fried Chicken Sides
+2026-04-05 16:06:53,105 - sagealphagal - INFO - INSERTED: Easy Teriyaki Shrimp In Less Than 30 Minutes
+2026-04-05 16:06:56,310 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Boursin-Stuffed Mushrooms That Disappear In Minutes (Includes Vegan Option)
+2026-04-05 16:06:59,450 - sagealphagal - INFO - SKIP (Instructions too short or missing): 10 Leftover Turkey Soup Recipes That Beat Turkey Sandwiches
+2026-04-05 16:07:02,618 - sagealphagal - INFO - INSERTED: Sleigh The Holidays With Vegan Christmas Cookies
+2026-04-05 16:07:05,784 - sagealphagal - INFO - SKIP (Too few ingredients (1)): 18 Lasagna Side Dishes That’Ll Make You Forget About The Main Dish
+2026-04-05 16:07:08,930 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Easy Balsamic Glaze Recipe You Can Make In Minutes
+2026-04-05 16:07:12,077 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Make A Smoked Salmon Omelet That Tastes Like A $20 Brunch Dish
+2026-04-05 16:07:15,242 - sagealphagal - INFO - INSERTED: 22 Vegan Hot Chocolate Recipes (You Won’T Believe Are Dairy Free)
+2026-04-05 16:07:19,347 - sagealphagal - INFO - INSERTED: Creamy Chai Rice Pudding In An Instant Pot (Easy, Vegan)
+2026-04-05 16:07:22,517 - sagealphagal - INFO - SKIP (Too few ingredients (2)): Creamy Instant Pot Rice Pudding: Dairy-Free And Delicious
+2026-04-05 16:07:25,660 - sagealphagal - INFO - SKIP (Too few ingredients (0)): 15-Minute Spinach Salad With Strawberries And Feta (Includes Dairy-Free Option)
+2026-04-05 16:07:28,817 - sagealphagal - INFO - INSERTED: Instant Pot Chicken Noodle Soup In 30 Minutes
+2026-04-05 16:07:32,000 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Sheet Pan Pancakes: A Breakfast Game Changer
+2026-04-05 16:07:35,153 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Easy Baked Eggs Florentine For Two
+2026-04-05 16:07:38,313 - sagealphagal - INFO - INSERTED: Easy Green Chile Chicken Enchiladas (Stacked Casserole Style)
+2026-04-05 16:07:41,456 - sagealphagal - INFO - SKIP (Too few ingredients (1)): 22 Immersion Blender Recipes That Will Make You Forget Your Bulky Blender
+2026-04-05 16:07:44,618 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Easy, Cheesy Asparagus Tart (Includes Dairy-Free Option)
+2026-04-05 16:07:47,778 - sagealphagal - INFO - INSERTED: Best Bbq Chicken Sides For Summer Cookouts
+2026-04-05 16:07:50,953 - sagealphagal - INFO - SKIP (Generic content (how to)): Making Waves: How To Craft An Ocean Water Cocktail
+2026-04-05 16:07:54,095 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Say Ciao To Boring With This Easy Italian Seasoning Recipe
+2026-04-05 16:07:57,248 - sagealphagal - INFO - INSERTED: 10 Quick And Easy Quinoa Recipes With Chicken
+2026-04-05 16:08:00,431 - sagealphagal - INFO - SKIP (Generic content (how to)): How To Cook Frozen Salmon In The Air Fryer Fast
+2026-04-05 16:08:03,572 - sagealphagal - INFO - SKIP (Generic content (tips)): Simple Tips For Grilling Fish Perfectly Every Time
+2026-04-05 16:08:06,740 - sagealphagal - INFO - INSERTED: Best Italian Meatball Recipe For Alpha Gals
+2026-04-05 16:08:09,910 - sagealphagal - INFO - INSERTED: Homemade Brazilian Cheese Bread (Pão De Queijo) (With Dairy-Free Option)
+2026-04-05 16:08:13,387 - sagealphagal - INFO - INSERTED: 10 Delicious Quinoa Breakfast Recipes To Start Your Day
+2026-04-05 16:08:16,553 - sagealphagal - INFO - INSERTED: Sundried Tomato And Feta Savory Quick Bread (Includes Dairy-Free Option)
+2026-04-05 16:08:19,707 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Homemade Guacamole With A Surprising Secret Ingredient
+2026-04-05 16:08:22,857 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Classic Mojito Mocktail With A Lemony Twist
+2026-04-05 16:08:26,035 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Irresistible Almond-Kissed Cherry Bread
+2026-04-05 16:08:29,186 - sagealphagal - INFO - SKIP (Too few ingredients (0)): 15-Minute Arugula Salad With Watermelon And Fresh Herbs
+2026-04-05 16:08:32,410 - sagealphagal - INFO - SKIP (Too few ingredients (1)): Chocolate Peanut Butter Overnight Oats Made While You Sleep
+2026-04-05 16:08:35,551 - sagealphagal - INFO - SKIP (Too few ingredients (0)): 20 Easy Shrimp Recipes For Dinner Your Family Will Love
+2026-04-05 16:08:38,712 - sagealphagal - INFO - INSERTED: Easy, 5-Minute Avocado Crema Recipe (Includes Vegan Option)
+2026-04-05 16:08:41,861 - sagealphagal - INFO - SKIP (Generic content (how to)): How To Make Chicken Cutlets At Home
+2026-04-05 16:08:45,018 - sagealphagal - INFO - INSERTED: Homemade Peach Ice Cream That’S Totally Dairy Free
+2026-04-05 16:08:48,185 - sagealphagal - INFO - INSERTED: Stuffed Peaches: A Sweet And Savory Treat (Includes Dairy-Free Option)
+2026-04-05 16:08:51,371 - sagealphagal - INFO - SKIP (Instructions too short or missing): 13 Vegan Chocolate Chip Cookie Recipes That’Ll Make You Forget About Butter
+2026-04-05 16:08:54,544 - sagealphagal - INFO - INSERTED: Easy Gluten Free Granola Recipe (Better Than Store-Bought)
+2026-04-05 16:08:57,700 - sagealphagal - INFO - SKIP (Too few ingredients (0)): Easy Stuffed Jalapenos: The Perfect Game Day Appetizer (With Dairy-Free Option)
+2026-04-05 16:09:01,492 - sagealphagal - INFO - INSERTED: Homemade Green Chile Enchilada Sauce In 20 Minutes
+2026-04-05 16:09:04,653 - sagealphagal - INFO - SKIP (Generic content (how to)): From Garden To Glass: How To Make Lavender Syrup
+2026-04-05 16:09:07,803 - sagealphagal - INFO - SKIP (Too few ingredients (2)): No-Bake Peanut Butter Bars With A Dairy-Free Chocolate Twist
+2026-04-05 16:09:10,969 - sagealphagal - INFO - INSERTED: Grated Egg Avocado Toast With Endless Topping Options
+2026-04-05 16:09:14,136 - sagealphagal - INFO - INSERTED: Fresh And Fruity Raspberry Muffins (With Vegan And Dairy-Free Options)
+2026-04-05 16:09:17,315 - sagealphagal - INFO - INSERTED: Easy Lobster Roll Recipe That Tastes Like New England
+2026-04-05 16:09:20,461 - sagealphagal - INFO - SKIP (Instructions too short or missing): From Classic To Ceviche, 13 Shrimp Salad Recipes You’Ll Love
+2026-04-05 16:09:23,620 - sagealphagal - INFO - INSERTED: Easy Mushroom Toast With Jammy Eggs
+2026-04-05 16:09:26,771 - sagealphagal - INFO - SKIP (Generic content (how to)): Sour Power: How To Make Vegan Buttermilk For Baking
+2026-04-05 16:09:29,911 - sagealphagal - INFO - SKIP (Instructions too short or missing): Soup’S On! 18 Fantastic Soup Recipes To Make This Fall
+2026-04-05 16:09:33,061 - sagealphagal - INFO - SKIP (Instructions too short or missing): 20 Leftover Turkey Recipes That Will Make You Crave Seconds
+2026-04-05 16:09:36,205 - sagealphagal - INFO - SKIP (Instructions too short or missing): 16 Delicious Chicken Marsala Side Dishes
+2026-04-05 16:09:39,363 - sagealphagal - INFO - INSERTED: Sweet Squares: Allergy-Friendly Rice Crispy Treats Recipe
+2026-04-05 16:09:42,535 - sagealphagal - INFO - SKIP (Too few ingredients (1)): 18 Delicious Quinoa Bowl Recipes For Alpha Gals
+2026-04-05 16:09:45,689 - sagealphagal - INFO - SKIP (Too few ingredients (2)): Vegan Homemade Pumpkin Spice Latte That Tastes Like Fall
+2026-04-05 16:09:45,689 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 44, skipped: 62, errors: 0
+2026-04-05 16:09:45,689 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-05 16:09:45,689 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-05 16:09:45,689 - main - INFO - Found: 206, Inserted: 84, Skipped: 114, Errors: 8
+2026-04-05 16:14:03,560 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 16:14:03,568 - main - INFO - Connected to database
+2026-04-05 16:14:03,568 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 16:14:03,568 - main - INFO - Index strategy: index_page
+2026-04-05 16:14:08,183 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Black Beans And Yellow Rice
+2026-04-05 16:14:10,297 - alphagalcooking - INFO - INSERTED: Apple-Walnut Ravioli
+2026-04-05 16:14:12,414 - alphagalcooking - INFO - INSERTED: Eggplant Fries
+2026-04-05 16:14:14,527 - alphagalcooking - INFO - INSERTED: Easy Beans And Rice With Cilantro
+2026-04-05 16:14:16,630 - alphagalcooking - INFO - INSERTED: Cranberry-Apple Sweet Potatoes
+2026-04-05 16:14:18,737 - alphagalcooking - INFO - INSERTED: Summer Veggie Penne
+2026-04-05 16:14:20,848 - alphagalcooking - INFO - INSERTED: Zucchini-Honey Bread
+2026-04-05 16:14:22,953 - alphagalcooking - INFO - INSERTED: Asparagus Soup
+2026-04-05 16:14:25,174 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-05 16:14:27,282 - alphagalcooking - INFO - INSERTED: Baby Blue Salad
+2026-04-05 16:14:29,399 - alphagalcooking - INFO - INSERTED: Heath Bar Apple Dip
+2026-04-05 16:14:31,517 - alphagalcooking - INFO - INSERTED: Out-Of-This-World Waffles
+2026-04-05 16:14:33,631 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Salmon Caesar Salad
+2026-04-05 16:14:35,740 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Our Favorite Apple Pie
+2026-04-05 16:14:37,851 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Strawberry-Almond Oatmeal Bake
+2026-04-05 16:14:39,958 - alphagalcooking - INFO - INSERTED: Bowties, Chicken, & Olives
+2026-04-05 16:14:42,075 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): ‘Tis The Season
+2026-04-05 16:14:44,186 - alphagalcooking - INFO - INSERTED: Chocolate Bread Pudding
+2026-04-05 16:14:46,297 - alphagalcooking - INFO - INSERTED: Vegetable And Tofu Pad Thai
+2026-04-05 16:14:48,398 - alphagalcooking - INFO - INSERTED: Soy-Lime Grilled Chicken Thighs
+2026-04-05 16:14:50,510 - alphagalcooking - INFO - INSERTED: Baked Beans Quintet
+2026-04-05 16:14:52,626 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Turkey And Bean Chili
+2026-04-05 16:14:54,728 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Kahlua-Glazed Carrots
+2026-04-05 16:14:56,834 - alphagalcooking - INFO - INSERTED: Creamy Rotini With Yellow Squash And Turkey Bacon
+2026-04-05 16:14:58,925 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Spaghetti And Meatballs
+2026-04-05 16:15:01,033 - alphagalcooking - INFO - INSERTED: Spinach Orzo Salad
+2026-04-05 16:15:03,130 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Vegetarian Egg Rolls
+2026-04-05 16:15:05,227 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Vegetarian Eggs Benedict
+2026-04-05 16:15:07,325 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Sesame Chicken Kabobs
+2026-04-05 16:15:09,427 - alphagalcooking - INFO - SKIP (Too few ingredients (1)): Eggplant Stacks
+2026-04-05 16:15:11,537 - alphagalcooking - INFO - INSERTED: Roasted Winter Veggies
+2026-04-05 16:15:13,659 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Turkey And Bean Chili
+2026-04-05 16:15:15,779 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Veggie Burritos
+2026-04-05 16:15:17,885 - alphagalcooking - INFO - INSERTED: Vegetable-Cheese Quiche
+2026-04-05 16:15:19,991 - alphagalcooking - INFO - INSERTED: Egg Cups
+2026-04-05 16:15:22,100 - alphagalcooking - INFO - INSERTED: Spinach And Cheddar Strata
+2026-04-05 16:15:24,209 - alphagalcooking - INFO - INSERTED: Apple And Pecan Acorn Squash
+2026-04-05 16:15:26,348 - alphagalcooking - INFO - INSERTED: Chicken Anna
+2026-04-05 16:15:28,443 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Pesto Pasta
+2026-04-05 16:15:30,538 - alphagalcooking - INFO - SKIP (Instructions too short or missing): Vegetarian Chili
+2026-04-05 16:15:32,695 - alphagalcooking - INFO - INSERTED: Spinach, Green Onion, And Smoked Gouda Quiche
+2026-04-05 16:15:34,812 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): Thanksgiving Sides
+2026-04-05 16:15:36,918 - alphagalcooking - INFO - INSERTED: Perry’S Potato Soup
+2026-04-05 16:15:39,029 - alphagalcooking - INFO - INSERTED: Bean And Salsa Tortillas
+2026-04-05 16:15:41,150 - alphagalcooking - INFO - SKIP (Too few ingredients (0)): ‘Tis The Season
+2026-04-05 16:15:43,253 - alphagalcooking - INFO - INSERTED: Chilled Strawberry Soup
+2026-04-05 16:15:45,348 - alphagalcooking - INFO - INSERTED: Broccoli-Fettuccine Alfredo
+2026-04-05 16:15:47,462 - alphagalcooking - INFO - INSERTED: All-American Turkey Meatloaf
+2026-04-05 16:15:49,577 - alphagalcooking - INFO - INSERTED: Sloppy Joes
+2026-04-05 16:15:51,692 - alphagalcooking - INFO - INSERTED: Raspberry Angel Pie
+2026-04-05 16:15:53,801 - alphagalcooking - INFO - INSERTED: Mandarin Spinach Salad
+2026-04-05 16:15:55,909 - alphagalcooking - INFO - INSERTED: Fresh Tomato And Basil Sauce
+2026-04-05 16:15:58,019 - alphagalcooking - INFO - INSERTED: Parsley Potatoes
+2026-04-05 16:16:00,115 - alphagalcooking - INFO - SKIP (Too few ingredients (2)): Roasted Winter Veggie Soup
+2026-04-05 16:16:00,116 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 34, skipped: 19, errors: 1
+2026-04-05 16:16:00,116 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 16:16:00,116 - main - INFO - Index strategy: index_page
+2026-04-05 16:16:04,894 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-05 16:16:07,525 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-05 16:16:09,527 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-05 16:16:12,282 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-05 16:16:14,835 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-05 16:16:16,880 - alphagalallergy - INFO - SKIP (Generic content (recipes)): Alpha Gal Allergy Recipes
+2026-04-05 16:16:19,374 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-05 16:16:21,755 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-05 16:16:21,755 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 1, errors: 7
+2026-04-05 16:16:21,755 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 16:16:21,755 - main - INFO - Index strategy: paginated_blog
+2026-04-05 16:16:34,563 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 4 - The Waiting Game
+2026-04-05 16:16:37,702 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Day 6 - Reading Menus And Asking Questions
+2026-04-05 16:16:40,842 - alphagaldiet_blogspot - INFO - SKIP (Instructions too short or missing): Updated Test Results - December 2016
+2026-04-05 16:16:44,017 - alphagaldiet_blogspot - INFO - SKIP (Generic content (guide)): General Guidelines - What Works For Me ... And What To Avoid
+2026-04-05 16:16:47,164 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (0)): Sharing Stories - Janet
+2026-04-05 16:16:50,300 - alphagaldiet_blogspot - INFO - SKIP (Too few ingredients (2)): Egglettes - Alpha Gal Friendly
