@@ -31,3 +31,16 @@ yarn-error.log*
 
 # Prisma
 .env.example
+
+# Python
+.venv
+venv/
+agent/venv/
+*.pyc
+__pycache__/
+
+# Claude
+.claude/
+
+# Logs
+scraper.log

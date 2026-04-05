@@ -1,0 +1,111 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String    @unique @db.VarChar(100)
+  recipes  Recipe[]
+
+  @@map("categories")
+}
+
+model Recipe {
+  id                 Int                  @id @default(autoincrement())
+  name               String               @db.VarChar(255)
+  category_id        Int
+  category           Category             @relation(fields: [category_id], references: [id])
+  instructions       String?              @db.MediumText
+  raw_ingredients    String?              @db.MediumText
+  raw_instructions   String?              @db.MediumText
+  image_url          String?              @db.VarChar(500)
+  publication_date   DateTime?            @db.Date
+  created_at         DateTime             @default(now())
+
+  recipe_ingredients RecipeIngredient[]
+  recipe_instructions RecipeInstruction[]
+  recipe_tags        RecipeTag[]
+  recipe_sources     RecipeSource[]
+
+  @@map("recipes")
+}
+
+model Ingredient {
+  id                 Int                  @id @default(autoincrement())
+  name               String               @unique @db.VarChar(150)
+  recipe_ingredients RecipeIngredient[]
+
+  @@map("ingredients")
+}
+
+model RecipeIngredient {
+  id             Int        @id @default(autoincrement())
+  recipe_id      Int
+  ingredient_id  Int
+  quantity       String?    @db.VarChar(50)
+  unit           String?    @db.VarChar(50)
+  notes          String?    @db.VarChar(255)
+
+  recipe         Recipe     @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+  ingredient     Ingredient @relation(fields: [ingredient_id], references: [id])
+
+  @@map("recipe_ingredients")
+}
+
+model RecipeInstruction {
+  id               Int    @id @default(autoincrement())
+  recipe_id        Int
+  step_number      Int
+  instruction_text String @db.Text
+
+  recipe           Recipe @relation(fields: [recipe_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@map("recipe_instructions")
+}
+
+model Tag {
+  id          Int        @id @default(autoincrement())
+  name        String     @unique @db.VarChar(100)
+  recipe_tags RecipeTag[]
+
+  @@map("tags")
+}
+
+model RecipeTag {
+  recipe_id Int
+  tag_id    Int
+
+  recipe    Recipe @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+  tag       Tag    @relation(fields: [tag_id], references: [id], onDelete: Cascade)
+
+  @@id([recipe_id, tag_id])
+  @@map("recipe_tags")
+}
+
+model Source {
+  id          Int            @id @default(autoincrement())
+  site_name   String         @db.VarChar(150)
+  base_url    String         @unique @db.VarChar(255)
+  scrape_notes String?        @db.Text
+  recipe_sources RecipeSource[]
+
+  @@map("sources")
+}
+
+model RecipeSource {
+  recipe_id   Int
+  source_id   Int
+  source_url  String     @db.VarChar(500)
+  scraped_at  DateTime   @default(now())
+
+  recipe      Recipe     @relation(fields: [recipe_id], references: [id], onDelete: Cascade)
+  source      Source     @relation(fields: [source_id], references: [id])
+
+  @@id([recipe_id, source_id])
+  @@map("recipe_sources")
+}

@@ -1660,3 +1660,108 @@ pymysql.err.OperationalError: (1205, 'Lock wait timeout exceeded; try restarting
 2026-04-05 10:50:12,223 - sagealphagal - INFO - INSERTED: Making Waves: How To Craft An Ocean Water Cocktail
 2026-04-05 10:50:15,400 - sagealphagal - INFO - INSERTED: From Classic To Creative: 13 Fried Chicken Sides
 2026-04-05 10:50:18,562 - sagealphagal - INFO - INSERTED: 22 Immersion Blender Recipes That Will Make You Forget Your Bulky Blender
+2026-04-05 10:50:21,717 - sagealphagal - INFO - INSERTED: Soup’S On! 18 Fantastic Soup Recipes To Make This Fall
+2026-04-05 10:50:24,877 - sagealphagal - INFO - INSERTED: Simple Quinoa Stuffed Bell Peppers For Weeknight Meals
+2026-04-05 10:50:28,056 - sagealphagal - INFO - INSERTED: Simple Tips For Grilling Fish Perfectly Every Time
+2026-04-05 10:50:31,214 - sagealphagal - INFO - INSERTED: Easy Lobster Roll Recipe That Tastes Like New England
+2026-04-05 10:50:34,380 - sagealphagal - INFO - INSERTED: Craving Chocolate? Try This Easy Chocolate Chia Seed Pudding
+2026-04-05 10:50:37,553 - sagealphagal - INFO - INSERTED: Best Italian Meatball Recipe For Alpha Gals
+2026-04-05 10:50:40,725 - sagealphagal - INFO - INSERTED: Easy Lotion Bar Recipe For Silky Smooth Skin
+2026-04-05 10:50:43,880 - sagealphagal - INFO - INSERTED: Dairy Free Baking: Proven Tips For Beginners
+2026-04-05 10:50:47,035 - sagealphagal - INFO - INSERTED: 16 Delicious Chicken Marsala Side Dishes
+2026-04-05 10:50:50,205 - sagealphagal - INFO - INSERTED: Greek Yogurt Bowl: A Protein-Packed Way To Start Your Day
+2026-04-05 10:50:53,387 - sagealphagal - INFO - INSERTED: Boursin-Stuffed Mushrooms That Disappear In Minutes (Includes Vegan Option)
+2026-04-05 10:50:56,539 - sagealphagal - INFO - INSERTED: S’Mores Trail Mix Recipe For Sweet, Crunchy Fun
+2026-04-05 10:50:59,696 - sagealphagal - INFO - INSERTED: Best Cookbooks For Alpha-Gal: Safe And Delicious Eats
+2026-04-05 10:51:02,852 - sagealphagal - INFO - INSERTED: Easy Homemade Vegetable Broth Using Kitchen Scraps
+2026-04-05 10:51:06,011 - sagealphagal - INFO - INSERTED: Easy Mushroom Toast With Jammy Eggs
+2026-04-05 10:51:09,159 - sagealphagal - INFO - INSERTED: What To Serve With White Chicken Chili: 11 Delicious Ideas
+2026-04-05 10:51:12,317 - sagealphagal - INFO - INSERTED: 15-Minute Spinach Salad With Strawberries And Feta (Includes Dairy-Free Option)
+2026-04-05 10:51:15,475 - sagealphagal - INFO - INSERTED: Irresistible Almond-Kissed Cherry Bread
+2026-04-05 10:51:18,640 - sagealphagal - INFO - INSERTED: Easy Gluten Free Granola Recipe (Better Than Store-Bought)
+2026-04-05 10:51:21,839 - sagealphagal - INFO - INSERTED: Homemade Peach Ice Cream That’S Totally Dairy Free
+2026-04-05 10:51:25,000 - sagealphagal - INFO - INSERTED: Easy, 5-Minute Avocado Crema Recipe (Includes Vegan Option)
+2026-04-05 10:51:28,168 - sagealphagal - INFO - INSERTED: Classic Mojito Mocktail With A Lemony Twist
+2026-04-05 10:51:31,782 - sagealphagal - INFO - INSERTED: Chocolate-Covered Valentine’S Day Marshmallows
+2026-04-05 10:51:35,039 - sagealphagal - INFO - INSERTED: Fast And Easy Banana Blueberry Muffins (With Vegan And Dairy-Free Options)
+2026-04-05 10:51:38,207 - sagealphagal - INFO - INSERTED: Homemade Dairy-Free Amaretto Cherry Chip Ice Cream
+2026-04-05 10:51:41,366 - sagealphagal - INFO - INSERTED: Easy Bagel Breakfast Sandwich With Avocado And Egg
+2026-04-05 10:51:44,561 - sagealphagal - INFO - INSERTED: 37 Sizzling Cast Iron Skillet Chicken Recipes
+2026-04-05 10:51:47,791 - sagealphagal - INFO - INSERTED: Creamy Chai Rice Pudding In An Instant Pot (Easy, Vegan)
+2026-04-05 10:51:50,978 - sagealphagal - INFO - INSERTED: How To Make Chocolate Covered Strawberries
+2026-04-05 10:51:54,160 - sagealphagal - INFO - INSERTED: Sleigh The Holidays With Vegan Christmas Cookies
+2026-04-05 10:51:57,316 - sagealphagal - INFO - INSERTED: Craving Something Sweet? These Vegan Thumbprint Cookies Will Melt In Your Mouth
+2026-04-05 10:52:00,481 - sagealphagal - INFO - INSERTED: Homemade Brazilian Cheese Bread (Pão De Queijo) (With Dairy-Free Option)
+2026-04-05 10:52:03,632 - sagealphagal - INFO - INSERTED: Best Leftover Turkey Sandwich Recipes For Post-Holiday Magic
+2026-04-05 10:52:06,789 - sagealphagal - INFO - INSERTED: How To Make Taco Seasoning So Good, You’Ll Never Buy It Again
+2026-04-05 10:52:09,970 - sagealphagal - INFO - INSERTED: 18 Delicious Quinoa Bowl Recipes For Alpha Gals
+2026-04-05 10:52:13,129 - sagealphagal - INFO - INSERTED: Chicken Lettuce Wraps (In Less Than 20 Minutes)
+2026-04-05 10:52:16,298 - sagealphagal - INFO - INSERTED: Lavender Chamomile Cake With Strawberry Glaze
+2026-04-05 10:52:19,472 - sagealphagal - INFO - INSERTED: Mushroom Masterpiece: Spinach Stuffed Portobellos
+2026-04-05 10:52:22,642 - sagealphagal - INFO - INSERTED: Sweet Squares: Allergy-Friendly Rice Crispy Treats Recipe
+2026-04-05 10:52:25,819 - sagealphagal - INFO - INSERTED: Boursin Hasselback Potatoes: A Recipe For The Perfect Side Dish
+2026-04-05 10:52:29,014 - sagealphagal - INFO - INSERTED: Stuffed Peaches: A Sweet And Savory Treat (Includes Dairy-Free Option)
+2026-04-05 10:52:32,176 - sagealphagal - INFO - INSERTED: Effortless Winter Fruit Salad Perfect For Any Meal
+2026-04-05 10:52:35,359 - sagealphagal - INFO - INSERTED: 43 Sweet And Savory Pancake Toppings To Try Today
+2026-04-05 10:52:38,526 - sagealphagal - INFO - INSERTED: Easy Sweet Potato Casserole With Pecans And Crumble Topping
+2026-04-05 10:52:41,692 - sagealphagal - INFO - INSERTED: Easy Slow Cooker Black Beans You’Ll Want Every Week
+2026-04-05 10:52:44,859 - sagealphagal - INFO - INSERTED: Creamy Peach Lassi With Cardamom And Cinnamon (Includes Dairy-Free Option)
+2026-04-05 10:52:48,021 - sagealphagal - INFO - INSERTED: Delicious, Dairy Free Caramel Sauce In Just Two Steps
+2026-04-05 10:52:51,195 - sagealphagal - INFO - INSERTED: Chocolate Peanut Butter Overnight Oats Made While You Sleep
+2026-04-05 10:52:54,393 - sagealphagal - INFO - INSERTED: Mussels In Cream Sauce (Includes Dairy-Free Option)
+2026-04-05 10:52:57,576 - sagealphagal - INFO - INSERTED: Baked Apple Cider Donuts That Taste Like Fall (Includes Dairy-Free Option)
+2026-04-05 10:53:00,745 - sagealphagal - INFO - INSERTED: 10 Quick And Easy Quinoa Recipes With Chicken
+2026-04-05 10:53:03,933 - sagealphagal - INFO - INSERTED: 20 Easy Shrimp Recipes For Dinner Your Family Will Love
+2026-04-05 10:53:07,114 - sagealphagal - INFO - INSERTED: Scrumptious Strawberry Muffins With Cream Cheese Filling (Includes Dairy-Free And Vegan Options)
+2026-04-05 10:53:10,266 - sagealphagal - INFO - INSERTED: 9 Quinoa Dessert Recipes That Make This Superfood Taste Like Heaven
+2026-04-05 10:53:13,421 - sagealphagal - INFO - INSERTED: Homemade Guacamole With A Surprising Secret Ingredient
+2026-04-05 10:53:16,585 - sagealphagal - INFO - INSERTED: Rise And Shine With Easy, Dairy Free Tofu Pancakes
+2026-04-05 10:53:19,748 - sagealphagal - INFO - INSERTED: Sunshine In A Glass: Sugar Free Lemonade
+2026-04-05 10:53:22,908 - sagealphagal - INFO - INSERTED: Vegan Homemade Pumpkin Spice Latte That Tastes Like Fall
+2026-04-05 10:53:26,095 - sagealphagal - INFO - INSERTED: 18 Lasagna Side Dishes That’Ll Make You Forget About The Main Dish
+2026-04-05 10:53:29,260 - sagealphagal - INFO - INSERTED: Best Taco Meat Recipe For Alpha Gals
+2026-04-05 10:53:32,426 - sagealphagal - INFO - INSERTED: How To Cook Frozen Salmon In The Air Fryer Fast
+2026-04-05 10:53:35,618 - sagealphagal - INFO - INSERTED: Vegan Nutella: Your New Favorite Spread
+2026-04-05 10:53:38,769 - sagealphagal - INFO - INSERTED: Make A Smoked Salmon Omelet That Tastes Like A $20 Brunch Dish
+2026-04-05 10:53:41,930 - sagealphagal - INFO - INSERTED: Comfort Food Feast: Barefoot Contessa Chicken Marsala Recipe
+2026-04-05 10:53:45,084 - sagealphagal - INFO - INSERTED: Easy Balsamic Glaze Recipe You Can Make In Minutes
+2026-04-05 10:53:48,248 - sagealphagal - INFO - INSERTED: Easy Baked Eggs Florentine For Two
+2026-04-05 10:53:51,442 - sagealphagal - INFO - INSERTED: 30 Must-Try Quinoa Salad Recipes
+2026-04-05 10:53:54,593 - sagealphagal - INFO - INSERTED: 15-Minute Arugula Salad With Watermelon And Fresh Herbs
+2026-04-05 10:53:57,754 - sagealphagal - INFO - INSERTED: No-Bake Peanut Butter Bars With A Dairy-Free Chocolate Twist
+2026-04-05 10:54:00,983 - sagealphagal - INFO - INSERTED: 13 Vegan Chocolate Chip Cookie Recipes That’Ll Make You Forget About Butter
+2026-04-05 10:54:04,129 - sagealphagal - INFO - INSERTED: Easy Shrimp And Rice Recipes For An Alpha Gal’S Kitchen
+2026-04-05 10:54:07,292 - sagealphagal - INFO - INSERTED: Easy Green Chile Chicken Enchiladas (Stacked Casserole Style)
+2026-04-05 10:54:10,462 - sagealphagal - INFO - INSERTED: Sheet Pan Pancakes: A Breakfast Game Changer
+2026-04-05 10:54:13,624 - sagealphagal - INFO - INSERTED: 20 Leftover Turkey Recipes That Will Make You Crave Seconds
+2026-04-05 10:54:16,805 - sagealphagal - INFO - INSERTED: 10 Leftover Turkey Soup Recipes That Beat Turkey Sandwiches
+2026-04-05 10:54:19,970 - sagealphagal - INFO - INSERTED: From Garden To Glass: How To Make Lavender Syrup
+2026-04-05 10:54:23,134 - sagealphagal - INFO - INSERTED: Grated Egg Avocado Toast With Endless Topping Options
+2026-04-05 10:54:26,307 - sagealphagal - INFO - INSERTED: Homemade Chicken Stock That Beats Store-Bought Every Time
+2026-04-05 10:54:29,478 - sagealphagal - INFO - INSERTED: Sour Power: How To Make Vegan Buttermilk For Baking
+2026-04-05 10:54:32,654 - sagealphagal - INFO - INSERTED: 22 Vegan Hot Chocolate Recipes (You Won’T Believe Are Dairy Free)
+2026-04-05 10:54:35,820 - sagealphagal - INFO - INSERTED: Creamy Instant Pot Rice Pudding: Dairy-Free And Delicious
+2026-04-05 10:54:38,984 - sagealphagal - INFO - INSERTED: Easy Teriyaki Shrimp In Less Than 30 Minutes
+2026-04-05 10:54:42,180 - sagealphagal - INFO - INSERTED: This Spinach Salad With Peaches Is Basically Summer In A Bowl
+2026-04-05 10:54:45,346 - sagealphagal - INFO - INSERTED: How To Make Hummus That Beats Store-Bought Every Time
+2026-04-05 10:54:48,505 - sagealphagal - INFO - INSERTED: 10 Delicious Quinoa Breakfast Recipes To Start Your Day
+2026-04-05 10:54:51,677 - sagealphagal - INFO - INSERTED: Fresh And Fruity Raspberry Muffins (With Vegan And Dairy-Free Options)
+2026-04-05 10:54:55,996 - sagealphagal - INFO - INSERTED: Say Goodbye To Bone Char With Homemade Powdered Sugar
+2026-04-05 10:54:59,158 - sagealphagal - INFO - INSERTED: Healthy Peaches And Cream Baked Oatmeal (With Dairy-Free Option)
+2026-04-05 10:55:02,400 - sagealphagal - INFO - INSERTED: Say Ciao To Boring With This Easy Italian Seasoning Recipe
+2026-04-05 10:55:05,570 - sagealphagal - INFO - INSERTED: Dine With A “Friend”: Jennifer Aniston Quinoa Salad
+2026-04-05 10:55:08,763 - sagealphagal - INFO - INSERTED: Easy White Chicken Chili In A Crock-Pot
+2026-04-05 10:55:11,930 - sagealphagal - INFO - INSERTED: Best Bbq Chicken Sides For Summer Cookouts
+2026-04-05 10:55:15,087 - sagealphagal - INFO - INSERTED: Bite For Bite: The Best Beans For Protein
+2026-04-05 10:55:18,256 - sagealphagal - INFO - INSERTED: How To Make Peanut Butter
+2026-04-05 10:55:21,425 - sagealphagal - INFO - INSERTED: Easy, Cheesy Asparagus Tart (Includes Dairy-Free Option)
+2026-04-05 10:55:24,599 - sagealphagal - INFO - INSERTED: Grilled Chicken Again? These Side Dishes Will Satisfy!
+2026-04-05 10:55:27,787 - sagealphagal - INFO - INSERTED: Montana Mule: A Moscow Mule Variation With Huckleberry Vodka
+2026-04-05 10:55:30,961 - sagealphagal - INFO - INSERTED: Easy Stuffed Jalapenos: The Perfect Game Day Appetizer (With Dairy-Free Option)
+2026-04-05 10:55:34,147 - sagealphagal - INFO - INSERTED: Homemade Green Chile Enchilada Sauce In 20 Minutes
+2026-04-05 10:55:37,305 - sagealphagal - INFO - INSERTED: Instant Pot Chicken Noodle Soup In 30 Minutes
+2026-04-05 10:55:37,305 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 106, skipped: 0, errors: 0
+2026-04-05 10:55:37,305 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-05 10:55:37,306 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-05 10:55:37,306 - main - INFO - Found: 206, Inserted: 198, Skipped: 0, Errors: 8
