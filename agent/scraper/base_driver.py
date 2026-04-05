@@ -52,39 +52,104 @@ class BaseDriver(ABC):
         pass
 
     def _parse_instructions_into_steps(self, instructions_text: str) -> list[str]:
-        """Parse instructions into individual steps."""
+        """Parse instructions into individual steps, removing blog content and noise."""
         if not instructions_text:
             return []
 
-        steps = []
-        lines = instructions_text.split('\n')
-        current_step = ""
+        text = instructions_text
 
-        for line in lines:
-            line = line.strip()
-            if not line:
-                if current_step:
-                    steps.append(current_step)
-                    current_step = ""
+        # Remove common blog/content sections that come AFTER the recipe
+        # These patterns detect where the recipe instructions END
+        end_markers = [
+            r'(?:Notes?|Note:|Tip:|Tips?:|Variations?|Variation:|Storage:|Storing|Freezer|Can you|No Artificial Intelligence|Every recipe|If it\'s on|Serve.*with|What to|Nutrition|Calories|Protein|Fat|Thank you|Tried this|Please Note|Nutrition information).*',
+            r'Print.*Recipe.*',
+            r'Pin.*Recipe.*',
+            r'Prep Time.*Cook Time.*',
+            r'Servings.*Calories.*',
+            r'Equipment.*',
+            r'Share this:.*',
+            r'Email.*Print.*',
+            r'Tweet.*Like.*',
+        ]
+
+        for pattern in end_markers:
+            # Find the match
+            match = re.search(pattern, text, flags=re.IGNORECASE | re.DOTALL)
+            if match:
+                # Truncate at the start of the match
+                text = text[:match.start()]
+
+        text = text.strip()
+
+        # Also strip trailing noise patterns that might remain
+        text = re.sub(r'\s+(No ratings yet|Loading\.\.\.).*', '', text, flags=re.IGNORECASE | re.DOTALL)
+        text = re.sub(r'\s+Related\s*$', '', text, flags=re.IGNORECASE)
+
+        # First, try to parse already-numbered steps (1. 2. 3. format)
+        numbered_pattern = r'^\d+[\.\)]\s*'
+        if re.search(numbered_pattern, text, re.MULTILINE):
+            # Already has numbered steps - preserve the structure
+            steps = re.split(r'^\d+[\.\)]\s*', text, flags=re.MULTILINE)
+            steps = [s.strip() for s in steps if s.strip() and len(s.strip()) > 5]
+            return steps
+
+        # Otherwise, split by semicolons (strong delimiter for run-on instructions)
+        if ';' in text:
+            steps = text.split(';')
+            steps = [s.strip() for s in steps if s.strip()]
+
+            final_steps = []
+            for step in steps:
+                # Skip very short fragments (likely noise)
+                if len(step) < 5:
+                    continue
+
+                # If step is too long, try to break it up by sentence
+                if len(step) > 200 and '.' in step:
+                    sentences = re.split(r'(?<=[.!?])\s+', step)
+                    current = ""
+                    for sent in sentences:
+                        sent = sent.strip()
+                        if not sent:
+                            continue
+                        # Group sentences into reasonable step size (100-200 chars)
+                        if len(current) + len(sent) < 180:
+                            current += (" " + sent) if current else sent
+                        else:
+                            if current and len(current) > 10:
+                                final_steps.append(current)
+                            current = sent
+                    if current and len(current) > 10:
+                        final_steps.append(current)
+                else:
+                    final_steps.append(step)
+
+            return final_steps if final_steps else [text]
+
+        # Fall back to splitting by periods/sentences
+        sentences = re.split(r'(?<=[.!?])\s+', text)
+        steps = []
+        current = ""
+
+        for sent in sentences:
+            sent = sent.strip()
+            if not sent or len(sent) < 5:
                 continue
 
-            # Check if line starts with a number or bullet
-            if re.match(r'^(\d+[\.\)]\s*|[-•]\s*)', line):
-                if current_step:
-                    steps.append(current_step)
-                # Remove numbering/bullets from the beginning
-                current_step = re.sub(r'^(\d+[\.\)]\s*|[-•]\s*)', '', line)
+            # Group 1-2 sentences per step
+            if len(current) + len(sent) < 180:
+                current += (" " + sent) if current else sent
             else:
-                # Continuation of previous step
-                if current_step:
-                    current_step += " " + line
-                else:
-                    current_step = line
+                if current:
+                    steps.append(current)
+                current = sent
 
-        if current_step:
-            steps.append(current_step)
+        if current:
+            steps.append(current)
 
-        return steps
+        # Filter out very short steps
+        steps = [s for s in steps if len(s.strip()) > 10]
+        return steps if steps else []
 
     def run(self, dry_run=False, limit=None) -> dict:
         """Main execution method."""

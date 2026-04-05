@@ -14,6 +14,9 @@ interface CookGuideProps {
 
 export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
   const [checkedSteps, setCheckedSteps] = useState<Set<number>>(new Set());
+  const [checkedIngredients, setCheckedIngredients] = useState<Set<number>>(
+    new Set()
+  );
 
   const toggleStep = (stepNumber: number) => {
     setCheckedSteps((prev) => {
@@ -27,14 +30,34 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
     });
   };
 
+  const toggleIngredient = (ingredientIndex: number) => {
+    setCheckedIngredients((prev) => {
+      const next = new Set(prev);
+      if (next.has(ingredientIndex)) {
+        next.delete(ingredientIndex);
+      } else {
+        next.add(ingredientIndex);
+      }
+      return next;
+    });
+  };
+
   const ingredientLines = rawIngredients
     ? rawIngredients.split("\n").filter((line) => line.trim())
     : [];
 
   const completedSteps = checkedSteps.size;
   const totalSteps = steps.length;
-  const progressPercent =
-    totalSteps > 0 ? Math.round((completedSteps / totalSteps) * 100) : 0;
+  const completedIngredients = checkedIngredients.size;
+  const totalIngredients = ingredientLines.length;
+  const overallProgress =
+    totalSteps + totalIngredients > 0
+      ? Math.round(
+          ((completedSteps + completedIngredients) /
+            (totalSteps + totalIngredients)) *
+            100
+        )
+      : 0;
 
   return (
     <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-8 mt-8">
@@ -42,18 +65,21 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
         <h2 className="text-3xl font-bold text-slate-900 mb-2">
           👨‍🍳 Cook Guide
         </h2>
-        {totalSteps > 0 && (
+        {(totalSteps > 0 || totalIngredients > 0) && (
           <div className="mt-4">
             <div className="flex items-center justify-between text-sm mb-2">
               <span className="text-slate-600">
-                Progress: {completedSteps} of {totalSteps} steps
+                Progress: {completedSteps + completedIngredients} of{" "}
+                {totalSteps + totalIngredients} items
               </span>
-              <span className="font-semibold text-slate-900">{progressPercent}%</span>
+              <span className="font-semibold text-slate-900">
+                {overallProgress}%
+              </span>
             </div>
             <div className="w-full bg-slate-200 rounded-full h-2">
               <div
                 className="bg-blue-500 h-2 rounded-full transition-all duration-300"
-                style={{ width: `${progressPercent}%` }}
+                style={{ width: `${overallProgress}%` }}
               />
             </div>
           </div>
@@ -61,20 +87,37 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Left: Ingredients */}
+        {/* Left: Ingredients with checkboxes */}
         <div>
           <h3 className="text-xl font-semibold text-slate-900 mb-4">
             📋 What You'll Need
           </h3>
           {ingredientLines.length > 0 ? (
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {ingredientLines.map((ingredient, idx) => (
                 <li
                   key={idx}
-                  className="text-slate-700 flex items-start gap-3 text-sm leading-relaxed"
+                  className={`flex items-start gap-3 pb-3 border-b border-slate-200 last:border-b-0 ${
+                    checkedIngredients.has(idx) ? "opacity-60" : ""
+                  }`}
                 >
-                  <span className="text-blue-500 font-bold mt-0.5">•</span>
-                  <span>{ingredient}</span>
+                  <input
+                    type="checkbox"
+                    id={`ingredient-${idx}`}
+                    checked={checkedIngredients.has(idx)}
+                    onChange={() => toggleIngredient(idx)}
+                    className="mt-1 w-5 h-5 cursor-pointer accent-blue-500"
+                  />
+                  <label
+                    htmlFor={`ingredient-${idx}`}
+                    className={`cursor-pointer flex-1 text-sm leading-relaxed ${
+                      checkedIngredients.has(idx)
+                        ? "line-through text-slate-400"
+                        : "text-slate-700"
+                    }`}
+                  >
+                    {ingredient}
+                  </label>
                 </li>
               ))}
             </ul>

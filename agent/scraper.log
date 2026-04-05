@@ -1765,3 +1765,483 @@ pymysql.err.OperationalError: (1205, 'Lock wait timeout exceeded; try restarting
 2026-04-05 10:55:37,306 - main - INFO - 
 === GRAND TOTAL ===
 2026-04-05 10:55:37,306 - main - INFO - Found: 206, Inserted: 198, Skipped: 0, Errors: 8
+2026-04-05 12:10:28,339 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 12:10:28,346 - main - INFO - Connected to database
+2026-04-05 12:10:28,346 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 12:10:28,346 - main - INFO - Index strategy: index_page
+2026-04-05 12:10:32,906 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 1, skipped: 0, errors: 0
+2026-04-05 12:10:32,906 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 12:10:32,906 - main - INFO - Index strategy: index_page
+2026-04-05 12:10:37,571 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-05 12:10:37,571 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 0, errors: 1
+2026-04-05 12:10:37,571 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 12:10:37,571 - main - INFO - Index strategy: paginated_blog
+2026-04-05 12:10:50,421 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 1, skipped: 0, errors: 0
+2026-04-05 12:10:50,421 - main - INFO - === Feathers and Fins ===
+2026-04-05 12:10:50,421 - main - INFO - Index strategy: category_pages
+2026-04-05 12:10:53,325 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-05 12:10:53,328 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-05 12:10:53,329 - main - INFO - === Sage Alpha Gal ===
+2026-04-05 12:10:53,329 - main - INFO - Index strategy: category_pages
+2026-04-05 12:11:25,205 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 1, skipped: 0, errors: 0
+2026-04-05 12:11:25,205 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-05 12:11:25,205 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-05 12:11:25,205 - main - INFO - Found: 206, Inserted: 3, Skipped: 0, Errors: 1
+2026-04-05 12:11:25,205 - main - INFO - Dry-run complete. No database changes made.
+2026-04-05 12:13:54,785 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 12:13:54,792 - main - INFO - Connected to database
+2026-04-05 12:13:54,792 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 12:13:54,792 - main - INFO - Index strategy: index_page
+2026-04-05 12:13:57,057 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/pasta
+2026-04-05 12:13:57,057 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/05/perrys-potato-soup/
+2026-04-05 12:13:57,058 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/28/chocolate-bread-pudding/
+2026-04-05 12:13:57,058 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/13/parsley-potatoes/
+2026-04-05 12:13:57,059 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/10/vegetable-cheese-quiche/
+2026-04-05 12:13:57,059 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/05/pesto-pasta/
+2026-04-05 12:13:57,059 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/28/spinach-green-onion-and-smoked-gouda-quiche/
+2026-04-05 12:13:57,060 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/14/vegetarian-egg-rolls/
+2026-04-05 12:13:57,060 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/09/03/mandarin-spinach-salad/
+2026-04-05 12:13:57,060 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/22/zucchini-honey-bread/
+2026-04-05 12:13:57,060 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/03/03/sloppy-joes/
+2026-04-05 12:13:57,060 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/08/11/eggplant-fries/
+2026-04-05 12:13:57,061 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/16/eggplant-stacks/
+2026-04-05 12:13:57,061 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/09/04/sesame-chicken-kabobs/
+2026-04-05 12:13:57,061 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/09/02/summer-veggie-penne/
+2026-04-05 12:13:57,061 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/04/10/apple-walnut-ravioli/
+2026-04-05 12:13:57,062 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/06/19/creamy-rotini-with-yellow-squash-and-turkey-bacon/
+2026-04-05 12:13:57,062 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/07/all-american-turkey-meatloaf/
+2026-04-05 12:13:57,062 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/07/02/bean-and-salsa-tortillas/
+2026-04-05 12:13:57,062 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/31/spaghetti-and-meatballs/
+2026-04-05 12:13:57,062 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/11/roasted-winter-veggies/
+2026-04-05 12:13:57,063 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/poultry
+2026-04-05 12:13:57,063 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/eggs-cheese
+2026-04-05 12:13:57,063 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/22/roasted-winter-veggie-soup/
+2026-04-05 12:13:57,063 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/breads-muffins
+2026-04-05 12:13:57,063 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/11/01/vegetarian-chili/
+2026-04-05 12:13:57,064 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/02/baked-beans-quintet/
+2026-04-05 12:13:57,064 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/01/asparagus-soup/
+2026-04-05 12:13:57,064 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/05/20/cranberry-apple-sweet-potatoes/
+2026-04-05 12:13:57,064 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/10/08/heath-bar-apple-dip/
+2026-04-05 12:13:57,064 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/soups
+2026-04-05 12:13:59,568 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-05 12:13:59,569 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/23/black-beans-and-yellow-rice/
+2026-04-05 12:13:59,569 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/01/spinach-and-cheddar-strata/
+2026-04-05 12:13:59,570 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/28/vegetable-and-tofu-pad-thai/
+2026-04-05 12:13:59,570 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/07/03/baby-blue-salad/
+2026-04-05 12:13:59,571 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/13/easy-beans-and-rice-with-cilantro/
+2026-04-05 12:13:59,571 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/11/18/spinach-orzo-salad/
+2026-04-05 12:13:59,572 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/desserts
+2026-04-05 12:13:59,573 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/10/22/apple-and-pecan-acorn-squash/
+2026-04-05 12:13:59,574 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/30/bowties-chicken-olives/
+2026-04-05 12:13:59,574 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/06/06/chilled-strawberry-soup/
+2026-04-05 12:13:59,575 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/bean-recipes
+2026-04-05 12:13:59,575 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/05/11/vegetarian-eggs-benedict/
+2026-04-05 12:13:59,576 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/20/out-of-this-world-waffles/
+2026-04-05 12:13:59,576 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/vegetables
+2026-04-05 12:13:59,577 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/11/broccoli-fettuccine-alfredo/
+2026-04-05 12:13:59,577 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/24/raspberry-angel-pie/
+2026-04-05 12:13:59,578 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/09/15/chicken-anna/
+2026-04-05 12:13:59,578 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/06/08/fresh-tomato-and-basil-sauce/
+2026-04-05 12:13:59,579 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/20/kahlua-glazed-carrots/
+2026-04-05 12:13:59,579 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/06/12/soy-lime-grilled-chicken-thighs/
+2026-04-05 12:13:59,579 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/salads-sandwiches
+2026-04-05 12:13:59,579 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/29/egg-cups/
+2026-04-05 12:13:59,579 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 0, skipped: 53, errors: 1
+2026-04-05 12:13:59,579 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 12:13:59,579 - main - INFO - Index strategy: index_page
+2026-04-05 12:14:04,413 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-05 12:14:06,819 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-05 12:14:09,295 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-05 12:14:11,866 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-05 12:14:14,759 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-05 12:14:16,760 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-05 12:14:19,303 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-05 12:14:19,303 - alphagalallergy - INFO - SKIP (exists): https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/#print?share=print
+2026-04-05 12:14:19,303 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 1, errors: 7
+2026-04-05 12:14:19,303 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 12:14:19,304 - main - INFO - Index strategy: paginated_blog
+2026-04-05 12:14:29,411 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/updated-test-results-december-2016.html
+2026-04-05 12:14:29,412 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/where-in-world-is-alpha-gal.html
+2026-04-05 12:14:29,412 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-5-mixed-grill-beware.html
+2026-04-05 12:14:29,412 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-rob.html
+2026-04-05 12:14:29,413 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/allergy-message-in-english-and-spanish.html
+2026-04-05 12:14:29,413 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-9-back-to-work-and-seeking-out.html
+2026-04-05 12:14:29,413 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/prelude-to-alpha-gal-up-to-day-3.html
+2026-04-05 12:14:29,413 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/how-many-people-do-you-know.html
+2026-04-05 12:14:29,413 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/gluten-free-alpha-gal-friendly-pizza.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/chocolate-cake.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-6-reading-menus-and-asking-questions.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-janet.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/salmon-cakes-salmon-burgers.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/thanksgiving-treat.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-french.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-10-pizza-really.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-7-compiling-food-lists.html
+2026-04-05 12:14:29,414 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-8-asking-for-help-getting-settled-in.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/01/mardi-gras-time-shrimp-grits_13.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-4-waiting-game.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/australia-mammalian-meat-allergy-mma.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/cross-contact-food-allergies.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/shrimp-chicken-anduille-gumbo-recipe.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-violet.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/goofed-up-cross-contact.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/10/alpha-gal-friendly-turkey-meatloaf.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/general-guidelines-what-works-for-me.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/news-links-alpha-gal-allergy.html
+2026-04-05 12:14:29,415 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/preventing-next-tick-bite.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/egglettes-alpha-gal-friendly.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-11-blood-test-results-are-in.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/french-toast-alpha-gal-style.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/living-dairy-free-nutrient-replacement.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-tammy.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/holiday-sugar-cookie-recipe-alpha-gal.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/football-season-time-for-some-chili.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/answers-to-all-my-crazy-questions.html
+2026-04-05 12:14:29,416 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-kathleen.html
+2026-04-05 12:14:29,416 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 0, skipped: 38, errors: 0
+2026-04-05 12:14:29,416 - main - INFO - === Feathers and Fins ===
+2026-04-05 12:14:29,416 - main - INFO - Index strategy: category_pages
+2026-04-05 12:14:32,316 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-05 12:14:32,326 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-05 12:14:32,326 - main - INFO - === Sage Alpha Gal ===
+2026-04-05 12:14:32,326 - main - INFO - Index strategy: category_pages
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/smoked-salmon-omelet/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/amaretto-cherry-chip-ice-cream/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/goat-cheese-and-basil-stuffed-peaches/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/arugula-salad-with-watermelon/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-bowl-recipes/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/pancake-toppings/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-sandwich-recipes/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/stuffed-jalapenos/
+2026-04-05 12:15:01,057 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/tofu-pancakes/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-vegetable-broth/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sheet-pan-pancakes-recipe/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-rice-pudding/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-recipes-with-chicken/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sweet-potato-casserole-with-pecans/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-guacamole-inspired-by-boudros/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/boursin-stuffed-mushrooms/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/barefoot-contessa-chicken-marsala-recipe/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-and-rice-recipes/
+2026-04-05 12:15:01,058 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-hot-chocolate-recipes/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/peach-lassi/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chai-rice-pudding/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-salad-with-peaches/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/alpha-gal-friendly-rice-crispy-treats-recipe/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-stuffed-bell-peppers/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/jennifer-aniston-quinoa-salad/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/strawberry-muffins-with-cream-cheese-filling/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chicken-lettuce-wraps/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grilling-fish/
+2026-04-05 12:15:01,059 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-stuffed-portobello-mushrooms/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-salad-recipes/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-soup-recipes/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-cook-frozen-salmon-in-the-air-fryer/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chicken-cutlets/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-chicken-stock/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chocolate-covered-strawberries/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/mushroom-toast-recipe/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/balsamic-glaze-recipe/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/gluten-free-granola-recipe/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/easy-langostino-lobster-roll-recipe/
+2026-04-05 12:15:01,060 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-beans-for-protein/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-peach-ice-cream-thats-totally-dairy-free/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/brazilian-cheese-bread-recipe/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-nutella-recipe/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/asparagus-tart/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-meatball-recipe/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sides-for-grilled-chicken/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/montana-mule-moscow-mule-variation-with-huckleberry-vodka/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-breakfast-recipes/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/banana-blueberry-muffins-recipe/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/baked-apple-cider-donuts/
+2026-04-05 12:15:01,061 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-taco-seasoning/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/dairy-free-caramel-sauce/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-recipes/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/smores-trail-mix/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-lasagna/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/avocado-crema-recipe/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grated-egg-avocado-toast/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sugar-free-lemonade-recipe/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-recipes/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-salad-with-strawberries-and-feta/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sundried-tomato-feta-savory-quick-bread/
+2026-04-05 12:15:01,062 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/raspberry-muffins/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/boursin-hasselback-potatoes/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-thumbprint-cookies/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cherry-bread-recipe/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chocolate-chia-seed-pudding-recipe/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/slow-cooker-black-beans/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/peaches-and-cream-baked-oatmeal/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-recipes-for-dinner/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/ocean-water-cocktail/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lemon-mojito-mocktail/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/bagel-breakfast-sandwich/
+2026-04-05 12:15:01,063 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-cookbooks/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-soup-recipes/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-peanut-butter/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-pumpkin-spice-latte/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-white-chicken-chili/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-chocolate-chip-cookie-recipes/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/teriyaki-shrimp-recipe/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lavender-syrup/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/taco-meat-recipe/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chicken-marsala-sides/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/mussels-in-cream-sauce/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-powdered-sugar/
+2026-04-05 12:15:01,064 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cast-iron-skillet-chicken-recipes/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/greek-yogurt-bowl-recipe/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/baked-eggs-florentine/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-seasoning-recipe/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-chicken-noodle-soup/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/bbq-chicken-sides/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-christmas-cookies/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-enchilada-sauce/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chocolate-peanut-butter-overnight-oats/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-dessert-recipes/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/white-chicken-chili/
+2026-04-05 12:15:01,065 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lavender-chamomile-cake-recipe/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/no-bake-peanut-butter-bars/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lotion-bar-recipe/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-buttermilk-recipe/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/dairy-free-baking-tips/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-salad-recipes/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/fried-chicken-sides/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-hummus/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/winter-fruit-salad/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-chicken-enchiladas/
+2026-04-05 12:15:01,066 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/valentines-day-marshmallows/
+2026-04-05 12:15:01,066 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 0, skipped: 106, errors: 0
+2026-04-05 12:15:01,066 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-05 12:15:01,067 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-05 12:15:01,067 - main - INFO - Found: 206, Inserted: 0, Skipped: 198, Errors: 8
+2026-04-05 12:59:11,418 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 12:59:11,449 - main - INFO - Connected to database
+2026-04-05 12:59:11,449 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 12:59:11,449 - main - INFO - Index strategy: index_page
+2026-04-05 12:59:13,729 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/bean-recipes
+2026-04-05 12:59:13,729 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/05/pesto-pasta/
+2026-04-05 12:59:13,729 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/04/10/apple-walnut-ravioli/
+2026-04-05 12:59:13,730 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/salads-sandwiches
+2026-04-05 12:59:16,154 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-05 12:59:16,155 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/02/baked-beans-quintet/
+2026-04-05 12:59:16,156 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/07/02/bean-and-salsa-tortillas/
+2026-04-05 12:59:16,156 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/28/chocolate-bread-pudding/
+2026-04-05 12:59:16,157 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/29/egg-cups/
+2026-04-05 12:59:16,157 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/11/broccoli-fettuccine-alfredo/
+2026-04-05 12:59:16,158 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/28/spinach-green-onion-and-smoked-gouda-quiche/
+2026-04-05 12:59:16,158 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/03/03/sloppy-joes/
+2026-04-05 12:59:16,159 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/01/spinach-and-cheddar-strata/
+2026-04-05 12:59:16,159 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/05/11/vegetarian-eggs-benedict/
+2026-04-05 12:59:16,159 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/08/11/eggplant-fries/
+2026-04-05 12:59:16,159 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/01/05/perrys-potato-soup/
+2026-04-05 12:59:16,160 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/31/spaghetti-and-meatballs/
+2026-04-05 12:59:16,160 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/10/22/apple-and-pecan-acorn-squash/
+2026-04-05 12:59:16,160 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/10/08/heath-bar-apple-dip/
+2026-04-05 12:59:16,160 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/11/18/spinach-orzo-salad/
+2026-04-05 12:59:16,161 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/09/02/summer-veggie-penne/
+2026-04-05 12:59:16,161 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/06/12/soy-lime-grilled-chicken-thighs/
+2026-04-05 12:59:16,161 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/07/22/zucchini-honey-bread/
+2026-04-05 12:59:16,161 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/11/01/vegetarian-chili/
+2026-04-05 12:59:16,161 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/05/20/cranberry-apple-sweet-potatoes/
+2026-04-05 12:59:16,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/eggs-cheese
+2026-04-05 12:59:16,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/10/20/kahlua-glazed-carrots/
+2026-04-05 12:59:16,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/20/out-of-this-world-waffles/
+2026-04-05 12:59:16,162 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/desserts
+2026-04-05 12:59:16,163 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/breads-muffins
+2026-04-05 12:59:16,163 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2015/09/03/mandarin-spinach-salad/
+2026-04-05 12:59:16,163 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/11/roasted-winter-veggies/
+2026-04-05 12:59:16,163 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/28/vegetable-and-tofu-pad-thai/
+2026-04-05 12:59:16,164 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/30/bowties-chicken-olives/
+2026-04-05 12:59:16,164 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/10/vegetable-cheese-quiche/
+2026-04-05 12:59:16,164 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/soups
+2026-04-05 12:59:16,164 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/vegetables
+2026-04-05 12:59:16,164 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/13/easy-beans-and-rice-with-cilantro/
+2026-04-05 12:59:16,165 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/03/07/all-american-turkey-meatloaf/
+2026-04-05 12:59:16,165 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/06/19/creamy-rotini-with-yellow-squash-and-turkey-bacon/
+2026-04-05 12:59:16,165 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/07/24/raspberry-angel-pie/
+2026-04-05 12:59:16,165 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/09/04/sesame-chicken-kabobs/
+2026-04-05 12:59:16,165 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/04/13/parsley-potatoes/
+2026-04-05 12:59:16,166 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/05/23/black-beans-and-yellow-rice/
+2026-04-05 12:59:16,166 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/06/06/chilled-strawberry-soup/
+2026-04-05 12:59:16,166 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/06/08/fresh-tomato-and-basil-sauce/
+2026-04-05 12:59:16,166 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/poultry
+2026-04-05 12:59:16,167 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/09/15/chicken-anna/
+2026-04-05 12:59:16,167 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2013/08/01/asparagus-soup/
+2026-04-05 12:59:16,167 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/07/03/baby-blue-salad/
+2026-04-05 12:59:16,167 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2017/03/16/eggplant-stacks/
+2026-04-05 12:59:16,167 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/08/14/vegetarian-egg-rolls/
+2026-04-05 12:59:16,168 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/2014/01/22/roasted-winter-veggie-soup/
+2026-04-05 12:59:16,168 - alphagalcooking - INFO - SKIP (exists): https://alphagalcooking.wordpress.com/category/pasta
+2026-04-05 12:59:16,168 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 0, skipped: 53, errors: 1
+2026-04-05 12:59:16,168 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 12:59:16,168 - main - INFO - Index strategy: index_page
+2026-04-05 12:59:20,990 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-05 12:59:23,771 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-05 12:59:25,772 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-05 12:59:28,233 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-05 12:59:30,862 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-05 12:59:33,422 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-05 12:59:33,423 - alphagalallergy - INFO - SKIP (exists): https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/#print?share=print
+2026-04-05 12:59:35,829 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-05 12:59:35,830 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 0, skipped: 1, errors: 7
+2026-04-05 12:59:35,830 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 12:59:35,830 - main - INFO - Index strategy: paginated_blog
+2026-04-05 12:59:45,539 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-10-pizza-really.html
+2026-04-05 12:59:45,540 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-7-compiling-food-lists.html
+2026-04-05 12:59:45,540 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-rob.html
+2026-04-05 12:59:45,540 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/french-toast-alpha-gal-style.html
+2026-04-05 12:59:45,540 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/preventing-next-tick-bite.html
+2026-04-05 12:59:45,540 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-kathleen.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/cross-contact-food-allergies.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/news-links-alpha-gal-allergy.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-tammy.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/how-many-people-do-you-know.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-9-back-to-work-and-seeking-out.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/goofed-up-cross-contact.html
+2026-04-05 12:59:45,541 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-french.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-5-mixed-grill-beware.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/egglettes-alpha-gal-friendly.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-violet.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/salmon-cakes-salmon-burgers.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/living-dairy-free-nutrient-replacement.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-6-reading-menus-and-asking-questions.html
+2026-04-05 12:59:45,542 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/where-in-world-is-alpha-gal.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/answers-to-all-my-crazy-questions.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-11-blood-test-results-are-in.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-8-asking-for-help-getting-settled-in.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/day-4-waiting-game.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/02/gluten-free-alpha-gal-friendly-pizza.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/thanksgiving-treat.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/general-guidelines-what-works-for-me.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/australia-mammalian-meat-allergy-mma.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/11/football-season-time-for-some-chili.html
+2026-04-05 12:59:45,543 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2019/01/mardi-gras-time-shrimp-grits_13.html
+2026-04-05 12:59:45,544 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/holiday-sugar-cookie-recipe-alpha-gal.html
+2026-04-05 12:59:45,544 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/12/updated-test-results-december-2016.html
+2026-04-05 12:59:45,545 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/prelude-to-alpha-gal-up-to-day-3.html
+2026-04-05 12:59:45,545 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/07/allergy-message-in-english-and-spanish.html
+2026-04-05 12:59:45,545 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/chocolate-cake.html
+2026-04-05 12:59:45,546 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/06/shrimp-chicken-anduille-gumbo-recipe.html
+2026-04-05 12:59:45,546 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2016/10/alpha-gal-friendly-turkey-meatloaf.html
+2026-04-05 12:59:45,546 - alphagaldiet_blogspot - INFO - SKIP (exists): http://alphagaldiet.blogspot.com/2018/07/sharing-stories-janet.html
+2026-04-05 12:59:45,546 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 0, skipped: 38, errors: 0
+2026-04-05 12:59:45,546 - main - INFO - === Feathers and Fins ===
+2026-04-05 12:59:45,546 - main - INFO - Index strategy: category_pages
+2026-04-05 12:59:48,396 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-05 12:59:48,400 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-05 12:59:48,400 - main - INFO - === Sage Alpha Gal ===
+2026-04-05 12:59:48,400 - main - INFO - Index strategy: category_pages
+2026-04-05 13:00:18,437 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/jennifer-aniston-quinoa-salad/
+2026-04-05 13:00:18,438 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/pancake-toppings/
+2026-04-05 13:00:18,438 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/banana-blueberry-muffins-recipe/
+2026-04-05 13:00:18,438 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-meatball-recipe/
+2026-04-05 13:00:18,439 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-soup-recipes/
+2026-04-05 13:00:18,439 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/tofu-pancakes/
+2026-04-05 13:00:18,440 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/fried-chicken-sides/
+2026-04-05 13:00:18,440 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/bagel-breakfast-sandwich/
+2026-04-05 13:00:18,440 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-salad-with-peaches/
+2026-04-05 13:00:18,440 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/bbq-chicken-sides/
+2026-04-05 13:00:18,441 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sheet-pan-pancakes-recipe/
+2026-04-05 13:00:18,441 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-rice-pudding/
+2026-04-05 13:00:18,441 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/gluten-free-granola-recipe/
+2026-04-05 13:00:18,441 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chicken-cutlets/
+2026-04-05 13:00:18,441 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lemon-mojito-mocktail/
+2026-04-05 13:00:18,442 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-peach-ice-cream-thats-totally-dairy-free/
+2026-04-05 13:00:18,443 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-dessert-recipes/
+2026-04-05 13:00:18,443 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/barefoot-contessa-chicken-marsala-recipe/
+2026-04-05 13:00:18,443 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/baked-apple-cider-donuts/
+2026-04-05 13:00:18,443 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sundried-tomato-feta-savory-quick-bread/
+2026-04-05 13:00:18,444 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/italian-seasoning-recipe/
+2026-04-05 13:00:18,444 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-recipes/
+2026-04-05 13:00:18,444 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-salad-with-strawberries-and-feta/
+2026-04-05 13:00:18,444 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/alpha-gal-friendly-rice-crispy-treats-recipe/
+2026-04-05 13:00:18,444 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-beans-for-protein/
+2026-04-05 13:00:18,445 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-white-chicken-chili/
+2026-04-05 13:00:18,445 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-cook-frozen-salmon-in-the-air-fryer/
+2026-04-05 13:00:18,445 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lavender-chamomile-cake-recipe/
+2026-04-05 13:00:18,445 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/asparagus-tart/
+2026-04-05 13:00:18,445 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-christmas-cookies/
+2026-04-05 13:00:18,446 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/boursin-hasselback-potatoes/
+2026-04-05 13:00:18,446 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/best-cookbooks/
+2026-04-05 13:00:18,446 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-chicken-stock/
+2026-04-05 13:00:18,446 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/smores-trail-mix/
+2026-04-05 13:00:18,446 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-pumpkin-spice-latte/
+2026-04-05 13:00:18,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-recipes-for-dinner/
+2026-04-05 13:00:18,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/greek-yogurt-bowl-recipe/
+2026-04-05 13:00:18,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-sandwich-recipes/
+2026-04-05 13:00:18,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/montana-mule-moscow-mule-variation-with-huckleberry-vodka/
+2026-04-05 13:00:18,447 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/boursin-stuffed-mushrooms/
+2026-04-05 13:00:18,448 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/what-to-serve-with-lasagna/
+2026-04-05 13:00:18,448 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sugar-free-lemonade-recipe/
+2026-04-05 13:00:18,448 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chai-rice-pudding/
+2026-04-05 13:00:18,448 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sweet-potato-casserole-with-pecans/
+2026-04-05 13:00:18,448 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-breakfast-recipes/
+2026-04-05 13:00:18,449 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/spinach-stuffed-portobello-mushrooms/
+2026-04-05 13:00:18,449 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/easy-langostino-lobster-roll-recipe/
+2026-04-05 13:00:18,449 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/taco-meat-recipe/
+2026-04-05 13:00:18,449 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-vegetable-broth/
+2026-04-05 13:00:18,449 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grilling-fish/
+2026-04-05 13:00:18,450 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-buttermilk-recipe/
+2026-04-05 13:00:18,450 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-nutella-recipe/
+2026-04-05 13:00:18,450 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/sides-for-grilled-chicken/
+2026-04-05 13:00:18,450 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/avocado-crema-recipe/
+2026-04-05 13:00:18,450 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-chocolate-covered-strawberries/
+2026-04-05 13:00:18,451 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lotion-bar-recipe/
+2026-04-05 13:00:18,451 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/strawberry-muffins-with-cream-cheese-filling/
+2026-04-05 13:00:18,451 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/balsamic-glaze-recipe/
+2026-04-05 13:00:18,451 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/ocean-water-cocktail/
+2026-04-05 13:00:18,451 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/white-chicken-chili/
+2026-04-05 13:00:18,452 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/valentines-day-marshmallows/
+2026-04-05 13:00:18,452 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/raspberry-muffins/
+2026-04-05 13:00:18,452 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cherry-bread-recipe/
+2026-04-05 13:00:18,452 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-and-rice-recipes/
+2026-04-05 13:00:18,452 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/amaretto-cherry-chip-ice-cream/
+2026-04-05 13:00:18,453 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/cast-iron-skillet-chicken-recipes/
+2026-04-05 13:00:18,453 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/immersion-blender-soup-recipes/
+2026-04-05 13:00:18,453 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chocolate-chia-seed-pudding-recipe/
+2026-04-05 13:00:18,453 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-hummus/
+2026-04-05 13:00:18,453 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/winter-fruit-salad/
+2026-04-05 13:00:18,454 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/peach-lassi/
+2026-04-05 13:00:18,454 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chicken-lettuce-wraps/
+2026-04-05 13:00:18,454 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/leftover-turkey-recipes/
+2026-04-05 13:00:18,454 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-recipes-with-chicken/
+2026-04-05 13:00:18,454 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/smoked-salmon-omelet/
+2026-04-05 13:00:18,455 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-thumbprint-cookies/
+2026-04-05 13:00:18,455 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/dairy-free-caramel-sauce/
+2026-04-05 13:00:18,455 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/shrimp-salad-recipes/
+2026-04-05 13:00:18,455 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-guacamole-inspired-by-boudros/
+2026-04-05 13:00:18,456 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/dairy-free-baking-tips/
+2026-04-05 13:00:18,456 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chicken-marsala-sides/
+2026-04-05 13:00:18,456 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/goat-cheese-and-basil-stuffed-peaches/
+2026-04-05 13:00:18,456 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/teriyaki-shrimp-recipe/
+2026-04-05 13:00:18,456 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-hot-chocolate-recipes/
+2026-04-05 13:00:18,456 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/peaches-and-cream-baked-oatmeal/
+2026-04-05 13:00:18,457 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-taco-seasoning/
+2026-04-05 13:00:18,457 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-chicken-enchiladas/
+2026-04-05 13:00:18,457 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-stuffed-bell-peppers/
+2026-04-05 13:00:18,457 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/chocolate-peanut-butter-overnight-oats/
+2026-04-05 13:00:18,458 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/green-chile-enchilada-sauce/
+2026-04-05 13:00:18,458 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/mushroom-toast-recipe/
+2026-04-05 13:00:18,458 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/grated-egg-avocado-toast/
+2026-04-05 13:00:18,458 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/arugula-salad-with-watermelon/
+2026-04-05 13:00:18,458 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-salad-recipes/
+2026-04-05 13:00:18,459 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/brazilian-cheese-bread-recipe/
+2026-04-05 13:00:18,459 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/stuffed-jalapenos/
+2026-04-05 13:00:18,459 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/baked-eggs-florentine/
+2026-04-05 13:00:18,459 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/quinoa-bowl-recipes/
+2026-04-05 13:00:18,459 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/mussels-in-cream-sauce/
+2026-04-05 13:00:18,460 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/instant-pot-chicken-noodle-soup/
+2026-04-05 13:00:18,460 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/no-bake-peanut-butter-bars/
+2026-04-05 13:00:18,460 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/how-to-make-peanut-butter/
+2026-04-05 13:00:18,460 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/slow-cooker-black-beans/
+2026-04-05 13:00:18,460 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/lavender-syrup/
+2026-04-05 13:00:18,461 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/vegan-chocolate-chip-cookie-recipes/
+2026-04-05 13:00:18,461 - sagealphagal - INFO - SKIP (exists): https://sagealphagal.com/homemade-powdered-sugar/
+2026-04-05 13:00:18,461 - main - INFO - [sagealphagal] Summary — found: 106, inserted: 0, skipped: 106, errors: 0
+2026-04-05 13:00:18,461 - main - INFO - SKIP (disabled): The Alpha Gal Diet
+2026-04-05 13:00:18,461 - main - INFO - 
+=== GRAND TOTAL ===
+2026-04-05 13:00:18,461 - main - INFO - Found: 206, Inserted: 0, Skipped: 198, Errors: 8
