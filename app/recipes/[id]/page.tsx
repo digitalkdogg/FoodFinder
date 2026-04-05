@@ -103,41 +103,6 @@ export default async function RecipePage({
         </div>
       )}
 
-      {/* Ingredients */}
-      {recipe.recipe_ingredients.length > 0 && (
-        <section className="mb-8 bg-white rounded-lg shadow-sm border border-slate-200 p-6">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">
-            📝 Ingredients
-          </h2>
-          <ul className="space-y-3">
-            {recipe.recipe_ingredients.map((ri) => (
-              <li key={ri.id} className="flex items-start gap-3 text-slate-700">
-                <span className="text-blue-500 font-bold mt-0.5">•</span>
-                <span>
-                  {ri.quantity && <span className="font-semibold">{ri.quantity}</span>}
-                  {ri.unit && <span> {ri.unit}</span>}
-                  {ri.quantity && <span> </span>}
-                  <span>{ri.ingredient.name}</span>
-                  {ri.notes && <span className="text-slate-500"> ({ri.notes})</span>}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* Instructions */}
-      {recipe.instructions && (
-        <section className="mb-8 bg-white rounded-lg shadow-sm border border-slate-200 p-6">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">
-            📖 Instructions
-          </h2>
-          <div className="prose prose-sm text-slate-700 whitespace-pre-wrap">
-            {recipe.instructions}
-          </div>
-        </section>
-      )}
-
       {/* Cook Guide - NEW FEATURE */}
       <CookGuide
         rawIngredients={recipe.raw_ingredients}

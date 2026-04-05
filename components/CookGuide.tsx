@@ -67,7 +67,7 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
         </h2>
         {(totalSteps > 0 || totalIngredients > 0) && (
           <div className="mt-4">
-            <div className="flex items-center justify-between text-sm mb-2">
+            <div className="flex items-center justify-between text-base mb-2">
               <span className="text-slate-600">
                 Progress: {completedSteps + completedIngredients} of{" "}
                 {totalSteps + totalIngredients} items
@@ -89,7 +89,7 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left: Ingredients with checkboxes */}
         <div>
-          <h3 className="text-xl font-semibold text-slate-900 mb-4">
+          <h3 className="text-2xl font-semibold text-slate-900 mb-4">
             📋 What You'll Need
           </h3>
           {ingredientLines.length > 0 ? (
@@ -106,11 +106,11 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
                     id={`ingredient-${idx}`}
                     checked={checkedIngredients.has(idx)}
                     onChange={() => toggleIngredient(idx)}
-                    className="mt-1 w-5 h-5 cursor-pointer accent-blue-500"
+                    className="mt-1 w-6 h-6 cursor-pointer accent-blue-500"
                   />
                   <label
                     htmlFor={`ingredient-${idx}`}
-                    className={`cursor-pointer flex-1 text-sm leading-relaxed ${
+                    className={`cursor-pointer flex-1 text-lg leading-relaxed ${
                       checkedIngredients.has(idx)
                         ? "line-through text-slate-400"
                         : "text-slate-700"
@@ -128,7 +128,7 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
 
         {/* Right: Steps */}
         <div>
-          <h3 className="text-xl font-semibold text-slate-900 mb-4">
+          <h3 className="text-2xl font-semibold text-slate-900 mb-4">
             🎯 Steps
           </h3>
           {steps.length > 0 ? (
@@ -145,7 +145,7 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
                     id={`step-${step.step_number}`}
                     checked={checkedSteps.has(step.step_number)}
                     onChange={() => toggleStep(step.step_number)}
-                    className="mt-1 w-5 h-5 cursor-pointer accent-blue-500"
+                    className="mt-1 w-6 h-6 cursor-pointer accent-blue-500"
                   />
                   <label
                     htmlFor={`step-${step.step_number}`}
@@ -155,10 +155,10 @@ export default function CookGuide({ rawIngredients, steps }: CookGuideProps) {
                         : "text-slate-700"
                     }`}
                   >
-                    <span className="font-semibold block text-sm mb-1">
+                    <span className="font-semibold block text-lg mb-2">
                       Step {step.step_number}
                     </span>
-                    <span className="text-sm leading-relaxed">
+                    <span className="text-base leading-relaxed">
                       {step.instruction_text}
                     </span>
                   </label>
