@@ -30,7 +30,7 @@ yarn-error.log*
 .env.production.local
 
 # Prisma
-.env.example
+# (.env.example should be committed, not .env)
 
 # Python
 .venv
