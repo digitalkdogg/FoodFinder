@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+import re
 import requests
 import time
 import logging
@@ -50,6 +51,41 @@ class BaseDriver(ABC):
         """Parse a recipe page and return raw recipe dict."""
         pass
 
+    def _parse_instructions_into_steps(self, instructions_text: str) -> list[str]:
+        """Parse instructions into individual steps."""
+        if not instructions_text:
+            return []
+
+        steps = []
+        lines = instructions_text.split('\n')
+        current_step = ""
+
+        for line in lines:
+            line = line.strip()
+            if not line:
+                if current_step:
+                    steps.append(current_step)
+                    current_step = ""
+                continue
+
+            # Check if line starts with a number or bullet
+            if re.match(r'^(\d+[\.\)]\s*|[-•]\s*)', line):
+                if current_step:
+                    steps.append(current_step)
+                # Remove numbering/bullets from the beginning
+                current_step = re.sub(r'^(\d+[\.\)]\s*|[-•]\s*)', '', line)
+            else:
+                # Continuation of previous step
+                if current_step:
+                    current_step += " " + line
+                else:
+                    current_step = line
+
+        if current_step:
+            steps.append(current_step)
+
+        return steps
+
     def run(self, dry_run=False, limit=None) -> dict:
         """Main execution method."""
         from scraper import db
@@ -95,7 +131,9 @@ class BaseDriver(ABC):
                 name = normalize_recipe_name(raw["name"])
                 category_str = normalize_category(raw.get("category", ""))
                 tags = list(set(normalize_tag(t) for t in raw.get("tags", []) if t))
-                ingredients = parse_ingredients(raw.get("raw_ingredients", []))
+                raw_ingredients_list = raw.get("raw_ingredients", [])
+                raw_ingredients_text = "\n".join(raw_ingredients_list) if raw_ingredients_list else None
+                ingredients = parse_ingredients(raw_ingredients_list)
                 instructions = normalize_instructions(raw.get("instructions", ""))
                 image_url = raw.get("image_url")
                 pub_date = parse_date(raw.get("publication_date") or url)
@@ -110,7 +148,7 @@ class BaseDriver(ABC):
 
                 cat_id = db.get_or_create_category(cursor, category_str)
                 recipe_id = db.insert_recipe(
-                    cursor, name, cat_id, instructions, image_url, pub_date
+                    cursor, name, cat_id, instructions, image_url, pub_date, raw_ingredients_text
                 )
 
                 for tag_str in tags:
@@ -127,6 +165,12 @@ class BaseDriver(ABC):
                             cursor, recipe_id, ing_id,
                             ing["quantity"], ing["unit"], ing["notes"]
                         )
+
+                # Insert instruction steps
+                instruction_steps = self._parse_instructions_into_steps(instructions)
+                for step_number, step_text in enumerate(instruction_steps, 1):
+                    if step_text.strip():
+                        db.insert_recipe_instruction(cursor, recipe_id, step_number, step_text)
 
                 db.insert_recipe_source(cursor, recipe_id, source_id, url)
                 self.db_conn.commit()

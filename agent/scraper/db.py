@@ -61,12 +61,12 @@ def recipe_exists(cursor, source_url: str) -> bool:
 
 
 def insert_recipe(cursor, name: str, category_id: int, instructions: str,
-                  image_url: str, publication_date: str) -> int:
+                  image_url: str, publication_date: str, raw_ingredients: str = None) -> int:
     """Insert recipe and return recipe ID."""
     cursor.execute(
-        """INSERT INTO recipes (name, category_id, instructions, image_url, publication_date)
-           VALUES (%s, %s, %s, %s, %s)""",
-        (name, category_id, instructions, image_url, publication_date)
+        """INSERT INTO recipes (name, category_id, instructions, image_url, publication_date, raw_ingredients)
+           VALUES (%s, %s, %s, %s, %s, %s)""",
+        (name, category_id, instructions, image_url, publication_date, raw_ingredients)
     )
     return cursor.lastrowid
 
@@ -86,6 +86,15 @@ def insert_recipe_ingredient(cursor, recipe_id: int, ingredient_id: int,
         """INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, notes)
            VALUES (%s, %s, %s, %s, %s)""",
         (recipe_id, ingredient_id, quantity, unit, notes)
+    )
+
+
+def insert_recipe_instruction(cursor, recipe_id: int, step_number: int, instruction_text: str):
+    """Insert recipe instruction step."""
+    cursor.execute(
+        """INSERT INTO recipe_instructions (recipe_id, step_number, instruction_text)
+           VALUES (%s, %s, %s)""",
+        (recipe_id, step_number, instruction_text)
     )
 
 

@@ -1537,3 +1537,126 @@ pymysql.err.OperationalError: (1205, 'Lock wait timeout exceeded; try restarting
 2026-04-05 10:38:18,619 - main - INFO - 
 === GRAND TOTAL ===
 2026-04-05 10:38:18,619 - main - INFO - Found: 206, Inserted: 197, Skipped: 1, Errors: 8
+2026-04-05 10:44:59,415 - main - INFO - Loading config from /var/www/html/FoodFinder/agent/config/sites.yaml
+2026-04-05 10:44:59,422 - main - INFO - Connected to database
+2026-04-05 10:44:59,422 - main - INFO - === Alpha-Gal Cooking ===
+2026-04-05 10:44:59,422 - main - INFO - Index strategy: index_page
+2026-04-05 10:45:04,045 - alphagalcooking - INFO - INSERTED: Turkey And Bean Chili
+2026-04-05 10:45:06,162 - alphagalcooking - INFO - INSERTED: Baked Beans Quintet
+2026-04-05 10:45:08,296 - alphagalcooking - INFO - INSERTED: Heath Bar Apple Dip
+2026-04-05 10:45:10,414 - alphagalcooking - INFO - INSERTED: Eggplant Fries
+2026-04-05 10:45:12,524 - alphagalcooking - INFO - INSERTED: Mandarin Spinach Salad
+2026-04-05 10:45:14,632 - alphagalcooking - INFO - INSERTED: Raspberry Angel Pie
+2026-04-05 10:45:16,755 - alphagalcooking - INFO - INSERTED: Summer Veggie Penne
+2026-04-05 10:45:18,880 - alphagalcooking - INFO - INSERTED: Easy Beans And Rice With Cilantro
+2026-04-05 10:45:20,978 - alphagalcooking - INFO - INSERTED: Vegetarian Eggs Benedict
+2026-04-05 10:45:23,098 - alphagalcooking - INFO - INSERTED: Spinach Orzo Salad
+2026-04-05 10:45:25,202 - alphagalcooking - INFO - INSERTED: Apple-Walnut Ravioli
+2026-04-05 10:45:27,309 - alphagalcooking - INFO - INSERTED: Sesame Chicken Kabobs
+2026-04-05 10:45:29,417 - alphagalcooking - INFO - INSERTED: Fresh Tomato And Basil Sauce
+2026-04-05 10:45:31,520 - alphagalcooking - INFO - INSERTED: Out-Of-This-World Waffles
+2026-04-05 10:45:33,629 - alphagalcooking - INFO - INSERTED: Broccoli-Fettuccine Alfredo
+2026-04-05 10:45:35,740 - alphagalcooking - INFO - INSERTED: Kahlua-Glazed Carrots
+2026-04-05 10:45:37,846 - alphagalcooking - INFO - INSERTED: Spaghetti And Meatballs
+2026-04-05 10:45:39,951 - alphagalcooking - INFO - INSERTED: Apple And Pecan Acorn Squash
+2026-04-05 10:45:42,053 - alphagalcooking - INFO - INSERTED: Black Beans And Yellow Rice
+2026-04-05 10:45:44,160 - alphagalcooking - INFO - INSERTED: Chilled Strawberry Soup
+2026-04-05 10:45:46,276 - alphagalcooking - INFO - INSERTED: Chicken Anna
+2026-04-05 10:45:48,377 - alphagalcooking - INFO - INSERTED: All-American Turkey Meatloaf
+2026-04-05 10:45:50,497 - alphagalcooking - INFO - INSERTED: Pesto Pasta
+2026-04-05 10:45:52,657 - alphagalcooking - INFO - INSERTED: Vegetarian Chili
+2026-04-05 10:45:54,764 - alphagalcooking - INFO - INSERTED: Egg Cups
+2026-04-05 10:45:56,881 - alphagalcooking - INFO - INSERTED: Perry’S Potato Soup
+2026-04-05 10:45:58,987 - alphagalcooking - INFO - INSERTED: Cranberry-Apple Sweet Potatoes
+2026-04-05 10:46:01,086 - alphagalcooking - INFO - INSERTED: Bowties, Chicken, & Olives
+2026-04-05 10:46:03,205 - alphagalcooking - INFO - INSERTED: Our Favorite Apple Pie
+2026-04-05 10:46:05,313 - alphagalcooking - INFO - INSERTED: Spinach And Cheddar Strata
+2026-04-05 10:46:07,425 - alphagalcooking - INFO - INSERTED: Eggplant Stacks
+2026-04-05 10:46:09,538 - alphagalcooking - INFO - INSERTED: Vegetarian Egg Rolls
+2026-04-05 10:46:11,781 - alphagalcooking - WARNING - 404 on https://alphagalcooking.wordpress.com/category/rice-recipes, skipping
+2026-04-05 10:46:13,896 - alphagalcooking - INFO - INSERTED: Chocolate Bread Pudding
+2026-04-05 10:46:16,011 - alphagalcooking - INFO - INSERTED: Soy-Lime Grilled Chicken Thighs
+2026-04-05 10:46:18,133 - alphagalcooking - INFO - INSERTED: Veggie Burritos
+2026-04-05 10:46:20,287 - alphagalcooking - INFO - INSERTED: Strawberry-Almond Oatmeal Bake
+2026-04-05 10:46:22,411 - alphagalcooking - INFO - INSERTED: Thanksgiving Sides
+2026-04-05 10:46:24,520 - alphagalcooking - INFO - INSERTED: Asparagus Soup
+2026-04-05 10:46:26,630 - alphagalcooking - INFO - INSERTED: Parsley Potatoes
+2026-04-05 10:46:28,737 - alphagalcooking - INFO - INSERTED: Vegetable-Cheese Quiche
+2026-04-05 10:46:30,852 - alphagalcooking - INFO - INSERTED: Roasted Winter Veggie Soup
+2026-04-05 10:46:32,984 - alphagalcooking - INFO - INSERTED: ‘Tis The Season
+2026-04-05 10:46:35,104 - alphagalcooking - INFO - INSERTED: Bean And Salsa Tortillas
+2026-04-05 10:46:37,216 - alphagalcooking - INFO - INSERTED: Spinach, Green Onion, And Smoked Gouda Quiche
+2026-04-05 10:46:39,347 - alphagalcooking - INFO - INSERTED: Turkey And Bean Chili
+2026-04-05 10:46:41,454 - alphagalcooking - INFO - INSERTED: Roasted Winter Veggies
+2026-04-05 10:46:43,581 - alphagalcooking - INFO - INSERTED: ‘Tis The Season
+2026-04-05 10:46:45,687 - alphagalcooking - INFO - INSERTED: Vegetable And Tofu Pad Thai
+2026-04-05 10:46:47,812 - alphagalcooking - INFO - INSERTED: Salmon Caesar Salad
+2026-04-05 10:46:49,920 - alphagalcooking - INFO - INSERTED: Sloppy Joes
+2026-04-05 10:46:52,027 - alphagalcooking - INFO - INSERTED: Creamy Rotini With Yellow Squash And Turkey Bacon
+2026-04-05 10:46:54,134 - alphagalcooking - INFO - INSERTED: Baby Blue Salad
+2026-04-05 10:46:56,241 - alphagalcooking - INFO - INSERTED: Zucchini-Honey Bread
+2026-04-05 10:46:56,242 - main - INFO - [alphagalcooking] Summary — found: 54, inserted: 53, skipped: 0, errors: 1
+2026-04-05 10:46:56,242 - main - INFO - === The Alpha Gal Allergy Cooking ===
+2026-04-05 10:46:56,242 - main - INFO - Index strategy: index_page
+2026-04-05 10:47:01,020 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=twitter
+2026-04-05 10:47:03,022 - alphagalallergy - ERROR - fetch failed for mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email: No connection adapters were found for 'mailto:?subject=%5BShared%20Post%5D%20Alpha%20Gal%20Allergy%20Recipes&body=https%3A%2F%2Falphagalallergy.wordpress.com%2Falpha-gal-allergy-recipes%2F&share=email'
+2026-04-05 10:47:05,879 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=linkedin
+2026-04-05 10:47:08,430 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=tumblr
+2026-04-05 10:47:10,484 - alphagalallergy - INFO - INSERTED: Alpha Gal Allergy Recipes
+2026-04-05 10:47:12,871 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=reddit
+2026-04-05 10:47:15,412 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=pinterest
+2026-04-05 10:47:18,190 - alphagalallergy - WARNING - No recipe parsed from https://alphagalallergy.wordpress.com/alpha-gal-allergy-recipes/?share=facebook
+2026-04-05 10:47:18,190 - main - INFO - [alphagalallergy] Summary — found: 8, inserted: 1, skipped: 0, errors: 7
+2026-04-05 10:47:18,190 - main - INFO - === Alpha Gal Diet (Blogspot) ===
+2026-04-05 10:47:18,190 - main - INFO - Index strategy: paginated_blog
+2026-04-05 10:47:31,043 - alphagaldiet_blogspot - INFO - INSERTED: Day 8 - Asking For Help & Getting Settled In
+2026-04-05 10:47:34,191 - alphagaldiet_blogspot - INFO - INSERTED: Prelude To Alpha Gal - Up To Day 3
+2026-04-05 10:47:37,330 - alphagaldiet_blogspot - INFO - INSERTED: Football Season - Time For Some Chili !!!
+2026-04-05 10:47:40,503 - alphagaldiet_blogspot - INFO - INSERTED: Mardi Gras Time!   Shrimp & Grits
+2026-04-05 10:47:43,680 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Rob
+2026-04-05 10:47:46,838 - alphagaldiet_blogspot - INFO - INSERTED: Living Dairy Free - Nutrient Replacement
+2026-04-05 10:47:49,958 - alphagaldiet_blogspot - INFO - INSERTED: Australia - Mammalian Meat Allergy (Mma)
+2026-04-05 10:47:53,096 - alphagaldiet_blogspot - INFO - INSERTED: Day 4 - The Waiting Game
+2026-04-05 10:47:56,341 - alphagaldiet_blogspot - INFO - INSERTED: Alpha Gal Friendly - Turkey Meatloaf Recipe
+2026-04-05 10:47:59,480 - alphagaldiet_blogspot - INFO - INSERTED: News Links - Alpha Gal Allergy
+2026-04-05 10:48:02,591 - alphagaldiet_blogspot - INFO - INSERTED: General Guidelines - What Works For Me ... And What To Avoid
+2026-04-05 10:48:05,757 - alphagaldiet_blogspot - INFO - INSERTED: Day 6 - Reading Menus And Asking Questions
+2026-04-05 10:48:08,947 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Janet
+2026-04-05 10:48:12,136 - alphagaldiet_blogspot - INFO - INSERTED: Where In The World Is Alpha Gal?
+2026-04-05 10:48:15,273 - alphagaldiet_blogspot - INFO - INSERTED: Egglettes - Alpha Gal Friendly
+2026-04-05 10:48:18,446 - alphagaldiet_blogspot - INFO - INSERTED: Thanksgiving Treat
+2026-04-05 10:48:21,691 - alphagaldiet_blogspot - INFO - INSERTED: Chocolate Cake!
+2026-04-05 10:48:24,832 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Violet
+2026-04-05 10:48:28,006 - alphagaldiet_blogspot - INFO - INSERTED: Preventing The Next Tick Bite
+2026-04-05 10:48:31,152 - alphagaldiet_blogspot - INFO - INSERTED: Gluten Free, Alpha Gal Friendly Pizza With Chicken Anduille Sausage
+2026-04-05 10:48:34,310 - alphagaldiet_blogspot - INFO - INSERTED: Day 7 - Compiling Food Lists
+2026-04-05 10:48:37,501 - alphagaldiet_blogspot - INFO - INSERTED: Goofed Up - Cross Contact
+2026-04-05 10:48:40,624 - alphagaldiet_blogspot - INFO - INSERTED: Cross Contact - Food Allergies
+2026-04-05 10:48:43,754 - alphagaldiet_blogspot - INFO - INSERTED: Day 11 - Blood Test Results Are In
+2026-04-05 10:48:46,970 - alphagaldiet_blogspot - INFO - INSERTED: Allergy Message In English And Spanish For Restaurants
+2026-04-05 10:48:50,101 - alphagaldiet_blogspot - INFO - INSERTED: Day 10 - Pizza?  Really?
+2026-04-05 10:48:53,249 - alphagaldiet_blogspot - INFO - INSERTED: French Toast - Alpha Gal Style
+2026-04-05 10:48:56,404 - alphagaldiet_blogspot - INFO - INSERTED: Holiday Sugar Cookie Recipe - Alpha Gal Friendly
+2026-04-05 10:48:59,532 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - French
+2026-04-05 10:49:02,663 - alphagaldiet_blogspot - INFO - INSERTED: Shrimp / Chicken / Anduille Gumbo Recipe - Red Meat Free, Dairy Free, Gluten Free
+2026-04-05 10:49:05,801 - alphagaldiet_blogspot - INFO - INSERTED: Salmon Cakes / Salmon Burgers
+2026-04-05 10:49:08,928 - alphagaldiet_blogspot - INFO - INSERTED: Day 5 - Mixed Grill - Beware!
+2026-04-05 10:49:12,055 - alphagaldiet_blogspot - INFO - INSERTED: How Many People Do You Know ?
+2026-04-05 10:49:15,225 - alphagaldiet_blogspot - INFO - INSERTED: Day 9 - Back To Work, And Seeking Out Resources
+2026-04-05 10:49:18,366 - alphagaldiet_blogspot - INFO - INSERTED: Answers To All My Crazy Questions .....
+2026-04-05 10:49:21,494 - alphagaldiet_blogspot - INFO - INSERTED: Updated Test Results - December 2016
+2026-04-05 10:49:24,634 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Kathleen
+2026-04-05 10:49:27,782 - alphagaldiet_blogspot - INFO - INSERTED: Sharing Stories - Tammy
+2026-04-05 10:49:27,782 - main - INFO - [alphagaldiet_blogspot] Summary — found: 38, inserted: 38, skipped: 0, errors: 0
+2026-04-05 10:49:27,782 - main - INFO - === Feathers and Fins ===
+2026-04-05 10:49:27,782 - main - INFO - Index strategy: category_pages
+2026-04-05 10:49:30,661 - feathersfins - WARNING - 404 on https://feathersfins.com/category/recipes/, skipping
+2026-04-05 10:49:30,664 - main - INFO - [feathersfins] Summary — found: 0, inserted: 0, skipped: 0, errors: 0
+2026-04-05 10:49:30,664 - main - INFO - === Sage Alpha Gal ===
+2026-04-05 10:49:30,664 - main - INFO - Index strategy: category_pages
+2026-04-05 10:50:02,640 - sagealphagal - INFO - INSERTED: How To Make Chicken Cutlets At Home
+2026-04-05 10:50:05,883 - sagealphagal - INFO - INSERTED: Sundried Tomato And Feta Savory Quick Bread (Includes Dairy-Free Option)
+2026-04-05 10:50:09,036 - sagealphagal - INFO - INSERTED: From Classic To Ceviche, 13 Shrimp Salad Recipes You’Ll Love
+2026-04-05 10:50:12,223 - sagealphagal - INFO - INSERTED: Making Waves: How To Craft An Ocean Water Cocktail
+2026-04-05 10:50:15,400 - sagealphagal - INFO - INSERTED: From Classic To Creative: 13 Fried Chicken Sides
+2026-04-05 10:50:18,562 - sagealphagal - INFO - INSERTED: 22 Immersion Blender Recipes That Will Make You Forget Your Bulky Blender
